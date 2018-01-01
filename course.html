@@ -1,0 +1,653 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Code4CT</title>
+    <!-- link to icon for title -->
+    <link rel="icon" type="image/PNG" href="images/logo.png">
+    <!-- reference to font awesome icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- reference to jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <!-- reference to internal stylesheet-->
+    <style media="screen">
+    /* Media query for iphones */
+    /* Portrait and Landscape */
+    @media only screen
+      and (min-device-width: 320px)
+      and (max-device-width: 480px)
+      and (-webkit-min-device-pixel-ratio: 2) {
+        /*this is homepage stylesheet*/
+        /*general styling*/
+        *{
+          box-sizing: border-box;
+        }
+        /*header for display,grid-template-columns,grid-template-rows,width,height,position,top,right,left,and background-colour*/
+        header{
+              display: grid;
+              grid-template-columns: repeat(1,1fr);
+              grid-template-rows: repeat(1,1fr);
+              width:100%;
+              height: auto;
+              position: fixed;
+              top: 0px;
+              right: 0px;
+              left: 0px;
+              background-color: white;
+              z-index: 1;
+        }
+        /*nav unordered list-style,list-style-type,float,and margin-top*/
+        nav ul{
+              list-style: none;
+              list-style-type: none;
+              float: left;
+              margin-top: 10mm;
+
+        }
+        /*nav image width,height,and float*/
+        nav img{
+                  width: 240px;
+                  height: 100px;
+                  float: left;
+        }
+        /*nav list font-size,display,and padding*/
+        nav li{
+              font-size: 22px;
+              display: inline;
+              padding: 10px;
+        }
+        /*internal links for text-decoration,and colour*/
+        .internalLinks{
+                      text-decoration: none;
+                      color: black;
+        }
+        /*internal link hover colour*/
+        .internalLinks:hover{
+                            color: pink;
+        }
+        /*internal link active colour*/
+        .internalLinks:active{
+                            color: red;
+        }
+        /*search bar float*/
+        .searchBar{
+                  float: right;
+        }
+        /*conatainer display,grid-template-columns,grid-template-rows,width,height,text-align,margin-left,margin-top,and background-colour*/
+        .container{
+                  display: grid;
+                  grid-template-columns: repeat(2,1fr);
+                  grid-template-rows: repeat(1,1fr);
+                  width: 80%;
+                  height: auto;
+                  text-align: center;
+                  margin-left:40px;
+                  margin-top: 100px;
+                  background-color:#e38f84;
+        }
+        /*main container for display,grid-template-columns,grid-template-rows,width,height,text-align,margin-left,float-left,and background-colour*/
+        #containerMain{
+                      display: grid;
+                      grid-template-columns: repeat(1,1fr);
+                      grid-template-rows: repeat(2,1fr);
+                      width: 140%;
+                      height: auto;
+                      text-align: center;
+        }
+        /*class cost basket display,grid-template-columns,grid-template-rows,width,height,margin-right,text-align,float,background-colour,and position*/
+        .costBasket{
+                    display: grid;
+                    grid-template-columns: repeat(1,1fr);
+                    grid-template-rows: repeat(1,1fr);
+                    width: 45%;
+                    height: auto;
+                    margin-left: 300px;
+                    text-align: center;
+                    background-color: gray;
+                    position: static;
+        }
+
+        /*container1 display,grid-template-column,grid-template-rows,width,height and padding-left*/
+        #container1{
+                    display: grid;
+                    grid-template-columns: repeat(4,1fr);
+                    grid-template-rows: repeat(1,1fr);
+                    width: 100%;
+                    height: 330px;
+                    margin-top: 10px;
+        }
+
+        /*company unordered list-style*/
+        .company ul{
+                    list-style: square;
+        }
+        /*company anchor tag text-decoration,and colour*/
+        .company a{
+                  text-decoration: none;
+                  color: black;
+        }
+        /*company anchor hover colour*/
+        .company a:hover{
+                        color: red;
+        }
+        /*company anchor active colour*/
+        .company a:active{
+                          color: red;
+        }
+
+        /*help and support unordered list-style*/
+        .helpAndSupport ul{
+                        list-style: square;
+        }
+
+        /*contact unordered list-style and list-style-type*/
+        .contact ul{
+                    list-style: none;
+                    list-style-type: none;
+        }
+        /*signature bar width,height,background-colour,padding,and clear*/
+        .signatureBar{
+                      display: grid;
+                      grid-template-columns: repeat(2,1fr);
+                      grid-template-rows: repeat(1,1fr);
+                      width: 100%;
+                      height: auto;
+                      background-color:#e38f84;
+        }
+        /*copyright width and height*/
+        #copyright{
+                  width: 40%;
+                  height: 40px;
+        }
+        /*back to top width,height,opacity,and float*/
+        #backToTop{
+                  width: 5%;
+                  height: 40px;
+                  opacity: 0.5;
+                  float: right;
+        }
+    }
+    /* Media query for ipads */
+    /* Portrait and Landscape */
+    @media only screen
+      and (min-device-width: 480px)
+      and (max-device-width: 768px)
+      and (-webkit-min-device-pixel-ratio: 1) {
+        /*this is homepage stylesheet*/
+        /*general styling*/
+        *{
+          box-sizing: border-box;
+        }
+        /*header for display,grid-template-columns,grid-template-rows,width,height,position,top,right,left,and background-colour*/
+        header{
+              display: grid;
+              grid-template-columns: repeat(1,1fr);
+              grid-template-rows: repeat(1,1fr);
+              width:100%;
+              height: auto;
+              position: fixed;
+              top: 0px;
+              right: 0px;
+              left: 0px;
+              background-color: white;
+              z-index: 1;
+        }
+        /*nav unordered list-style,list-style-type,float,and margin-top*/
+        nav ul{
+              list-style: none;
+              list-style-type: none;
+              float: left;
+              margin-top: 10mm;
+
+        }
+        /*nav image width,height,and float*/
+        nav img{
+                  width: 240px;
+                  height: 100px;
+                  float: left;
+        }
+        /*nav list font-size,display,and padding*/
+        nav li{
+              font-size: 22px;
+              display: inline;
+              padding: 40px;
+        }
+        /*internal links for text-decoration,and colour*/
+        .internalLinks{
+                      text-decoration: none;
+                      color: black;
+        }
+        /*internal link hover colour*/
+        .internalLinks:hover{
+                            color: pink;
+        }
+        /*internal link active colour*/
+        .internalLinks:active{
+                            color: red;
+        }
+        /*search bar float*/
+        .searchBar{
+                  float: right;
+        }
+        /*conatainer display,grid-template-columns,grid-template-rows,width,height,text-align,margin-left,margin-top,and background-colour*/
+        .container{
+                  display: grid;
+                  grid-template-columns: repeat(2,1fr);
+                  grid-template-rows: repeat(1,1fr);
+                  width: 80%;
+                  height: auto;
+                  text-align: center;
+                  margin-left:40px;
+                  margin-top: 100px;
+                  background-color:#e38f84;
+        }
+        /*main container for display,grid-template-columns,grid-template-rows,width,height,text-align,margin-left,float-left,and background-colour*/
+        #containerMain{
+                      display: grid;
+                      grid-template-columns: repeat(1,1fr);
+                      grid-template-rows: repeat(2,1fr);
+                      width: 140%;
+                      height: auto;
+                      text-align: center;
+        }
+        /*class cost basket display,grid-template-columns,grid-template-rows,width,height,margin-right,text-align,float,background-colour,and position*/
+        .costBasket{
+                    display: grid;
+                    grid-template-columns: repeat(1,1fr);
+                    grid-template-rows: repeat(1,1fr);
+                    width: 45%;
+                    height: auto;
+                    margin-left: 300px;
+                    text-align: center;
+                    background-color: gray;
+                    position: static;
+        }
+
+        /*container1 display,grid-template-column,grid-template-rows,width,height and padding-left*/
+        #container1{
+                    display: grid;
+                    grid-template-columns: repeat(4,1fr);
+                    grid-template-rows: repeat(1,1fr);
+                    width: 100%;
+                    height: 330px;
+                    margin-top: 10px;
+                    /*padding-left: 40px;*/
+        }
+
+        /*company unordered list-style*/
+        .company ul{
+                    list-style: square;
+        }
+        /*company anchor tag text-decoration,and colour*/
+        .company a{
+                  text-decoration: none;
+                  color: black;
+        }
+        /*company anchor hover colour*/
+        .company a:hover{
+                        color: red;
+        }
+        /*company anchor active colour*/
+        .company a:active{
+                          color: red;
+        }
+
+        /*help and support unordered list-style*/
+        .helpAndSupport ul{
+                        list-style: square;
+        }
+
+        /*contact unordered list-style and list-style-type*/
+        .contact ul{
+                    list-style: none;
+                    list-style-type: none;
+        }
+        /*signature bar width,height,background-colour,padding,and clear*/
+        .signatureBar{
+                      display: grid;
+                      grid-template-columns: repeat(2,1fr);
+                      grid-template-rows: repeat(1,1fr);
+                      width: 100%;
+                      height: auto;
+                      background-color:#e38f84;
+        }
+        /*copyright width and height*/
+        #copyright{
+                  width: 40%;
+                  height: 40px;
+        }
+        /*back to top width,height,opacity,and float*/
+        #backToTop{
+                  width: 5%;
+                  height: 40px;
+                  opacity: 0.5;
+                  float: right;
+        }
+    }
+    /* Media query for standard laptops */
+    /* ----------- Non-Retina Screens ----------- */
+    @media screen
+      and (min-device-width: 768px)
+      and (max-device-width: 1600px)
+      and (-webkit-min-device-pixel-ratio: 1) {
+        /*this is homepage stylesheet*/
+        /*general styling*/
+        *{
+          box-sizing: border-box;
+        }
+        /*header for display,grid-template-columns,grid-template-rows,width,height,position,top,right,left,and background-colour*/
+        header{
+              display: grid;
+              grid-template-columns: repeat(1,1fr);
+              grid-template-rows: repeat(1,1fr);
+              width:100%;
+              height: auto;
+              position: fixed;
+              top: 0px;
+              right: 0px;
+              left: 0px;
+              background-color: white;
+              z-index: 1;
+        }
+        /*nav unordered list-style,list-style-type,float,and margin-top*/
+        nav ul{
+              list-style: none;
+              list-style-type: none;
+              float: left;
+              margin-top: 10mm;
+
+        }
+        /*nav image width,height,and float*/
+        nav img{
+                  width: 240px;
+                  height: 100px;
+                  float: left;
+        }
+        /*nav list font-size,display,and padding*/
+        nav li{
+              font-size: 22px;
+              display: inline;
+              padding: 40px;
+        }
+        /*internal links for text-decoration,and colour*/
+        .internalLinks{
+                      text-decoration: none;
+                      color: black;
+        }
+        /*internal link hover colour*/
+        .internalLinks:hover{
+                            color: pink;
+        }
+        /*internal link active colour*/
+        .internalLinks:active{
+                            color: red;
+        }
+        /*search bar float*/
+        .searchBar{
+                  float: right;
+        }
+        /*conatainer display,grid-template-columns,grid-template-rows,width,height,text-align,margin-left,margin-top,and background-colour*/
+        .container{
+                  display: grid;
+                  grid-template-columns: repeat(2,1fr);
+                  grid-template-rows: repeat(1,1fr);
+                  width: 80%;
+                  height: auto;
+                  text-align: center;
+                  margin-left:130px;
+                  margin-top: 100px;
+                  background-color:#e38f84;
+        }
+        /*main container for display,grid-template-columns,grid-template-rows,width,height,text-align,margin-left,float-left,and background-colour*/
+        #containerMain{
+                      display: grid;
+                      grid-template-columns: repeat(2,1fr);
+                      grid-template-rows: repeat(1,1fr);
+                      width: 140%;
+                      height: auto;
+                      text-align: center;
+        }
+        /*class cost basket display,grid-template-columns,grid-template-rows,width,height,margin-right,text-align,float,background-colour,and position*/
+        .costBasket{
+                    display: grid;
+                    grid-template-columns: repeat(1,1fr);
+                    grid-template-rows: repeat(1,1fr);
+                    width: 45%;
+                    height: auto;
+                    margin-left: 300px;
+                    text-align: center;
+                    background-color: gray;
+                    position: static;
+        }
+
+        /*container1 display,grid-template-column,grid-template-rows,width,height and padding-left*/
+        #container1{
+                    display: grid;
+                    grid-template-columns: repeat(4,1fr);
+                    grid-template-rows: repeat(1,1fr);
+                    width: 100%;
+                    height: 330px;
+                    margin-top: 10px;
+                    /*padding-left: 40px;*/
+        }
+
+        /*company unordered list-style*/
+        .company ul{
+                    list-style: square;
+        }
+        /*company anchor tag text-decoration,and colour*/
+        .company a{
+                  text-decoration: none;
+                  color: black;
+        }
+        /*company anchor hover colour*/
+        .company a:hover{
+                        color: red;
+        }
+        /*company anchor active colour*/
+        .company a:active{
+                          color: red;
+        }
+
+        /*help and support unordered list-style*/
+        .helpAndSupport ul{
+                        list-style: square;
+        }
+
+        /*contact unordered list-style and list-style-type*/
+        .contact ul{
+                    list-style: none;
+                    list-style-type: none;
+        }
+        /*signature bar width,height,background-colour,padding,and clear*/
+        .signatureBar{
+                      display: grid;
+                      grid-template-columns: repeat(2,1fr);
+                      grid-template-rows: repeat(1,1fr);
+                      width: 100%;
+                      height: auto;
+                      background-color:#e38f84;
+        }
+        /*copyright width and height*/
+        #copyright{
+                  width: 40%;
+                  height: 40px;
+        }
+        /*back to top width,height,opacity,and float*/
+        #backToTop{
+                  width: 5%;
+                  height: 40px;
+                  opacity: 0.5;
+                  float: right;
+        }
+    }
+
+    </style>
+  </head>
+  <body>
+    <!-- header for navigation bar with company logo,internal links,and form for input and search button  -->
+    <header>
+      <nav>
+        <img src="images/logo.png" alt="logo" width="100px" height="15%">
+        <ul>
+          <li><a class="internalLinks" href="homepage.html">Home</a></li>
+          <li><a class="internalLinks" href="course.html">Course</a></li>
+          <li><a class="internalLinks" href="about.html">About</a></li>
+          <li><a class="internalLinks" href="portfolio.html">Portfolio</a></li>
+          <li><a class="internalLinks" href="contact.html">Contact</a></li>
+          <li>
+            <form class="searchBar" action="index.html" method="post">
+              <input type="text" name="search" value="" placeholder="search...">
+              <button type="button" name="button"><i class="fa fa-search"></i></button>
+            </form>
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <div class="container">
+      <!-- main container for courses listed -->
+      <section id="containerMain">
+
+        <div id="javaScript">
+
+        </div>
+        <div id="frontEndWebDevelopment">
+
+        </div>
+        <div id="python">
+
+        </div>
+
+        <div id="fullStackJavaScript">
+
+        </div>
+        <div id="websiteDeployment">
+
+        </div>
+
+        <div id="innovationChallenge">
+
+        </div>
+        <div id="codeStorm">
+
+        </div>
+        <div id="hackathon">
+
+        </div>
+
+        <div id="webPages">
+
+        </div>
+        <div id="music">
+
+        </div>
+        <div id="animation">
+
+        </div>
+        <div id="developer">
+
+        </div>
+      </section>
+      <!-- div class for cost basket containing cost basket image and div's for courses -->
+      <div class="costBasket">
+        <div style="height:180px;">
+          <img src="images/cart.png" alt="cart" width="200px" height="150px">
+          <h2>Total cost of courses:</h2>
+          <div class="course1">
+          </div>
+          <div class="course2">
+          </div>
+          <div class="course3">
+          </div>
+          <div class="course4">
+          </div>
+          <div class="course5">
+          </div>
+          <div class="course6">
+          </div>
+          <div class="course7">
+          </div>
+          <div class="course8">
+          </div>
+          <div class="course9">
+          </div>
+          <div class="course10">
+          </div>
+          <div class="course11">
+          </div>
+          <div class="course12">
+          </div>
+          <div id="total"></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- footer for id container5  with section tag for div class legal,company,help and support,and contact -->
+    <footer>
+      <section id="container1">
+        <!-- class legal with h3 heading and paragraph tags for text -->
+        <div class="legal">
+          <h3>Legal:</h3>
+          <p>Code for Cape Town is a project of Innovate South Africa, which is a registered non-profit (137806NPO) and a Public Beneficiary Organisation (930050338)</p>
+        </div>
+        <!-- class company for h3 heading and unordered list for anchor tags -->
+        <div class="company">
+          <h3>Company:</h3>
+          <ul>
+            <li><a href="#">About us</a></li>
+            <li><a href="#">Contact us</a></li>
+            <li><a href="#">Blog</a></li>
+            <li><a href="#">Testimonials</a></li>
+            <li><a href="#">Affiliate program</a></li>
+          </ul>
+        </div>
+        <!-- class help and support for h3 heading and unordered list for measures put in place -->
+        <div class="helpAndSupport">
+          <h3>Help & support</h3>
+          <ul>
+            <li>Help Centre</li>
+            <li>Free simple template</li>
+            <li>Refund policy</li>
+            <li>Report span</li>
+          </ul>
+        </div>
+        <!-- class contact for h3 heading and table for inline styling,images,paragraph tags  -->
+        <div class="contact">
+          <h3>Contact:</h3>
+          <table>
+            <tr>
+              <td style="border:1px solid black;"><img src="images/tel.png" alt="tel" width="30px" height="20px"></td>
+              <td><p>+(021) 685 0991</p></td>
+            </tr>
+            <tr>
+              <td style="border:1px solid #e38f84;"><img src="images/email.png" alt="email" width="30px" height="20px"></td>
+              <td><p>info@code4ct.com</p></td>
+            </tr>
+            <tr>
+              <td style="border:1px solid black;"><img src="images/address.png" alt="address" width="30px" height="20px"></td>
+              <td><p>Innovate South Africa, 403 Old Castle Brewery, 6 Beach Rd, Woodstock, Cape Town, 7915</p></td>
+            </tr>
+          </table>
+        </div>
+      </section>
+      <!-- div class signature bar for div id copyright,back to top,follow us,and contact icons -->
+      <div class="signatureBar">
+        <!-- div id for copyright with inline styling paragraph tags -->
+        <div id="copyright">
+          <p style="color:white;">copyright&copy;2017 PRIVACY POLICY</p>
+          <!-- anchor tag for back to top scroll with image to display anchor -->
+
+        </div>
+        <div class="backToTop">
+          <a href="#" id="backToTop"><img src = "images/scrollUp.png" alt="ScrollUp" width="20px" height= "40px"></a>
+        </div>
+
+      </div>
+    </footer>
+    <!-- link to external javascript homepage -->
+    <script src="javascript/course.js"></script>
+    <script src="javascript/message.js"></script>
+
+  </body>
+</html>

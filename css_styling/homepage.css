@@ -1,0 +1,1133 @@
+/* Media query for iphones */
+/* Portrait and Landscape */
+@media only screen
+  and (min-device-width: 320px)
+  and (max-device-width: 480px)
+  and (-webkit-min-device-pixel-ratio: 2) {
+    /*this is homepage stylesheet*/
+    /*general styling*/
+        *{
+          box-sizing: border-box;
+        }
+        /*header for display,grid-template-columns,grid-template-rows,width,height,position,top,right,left,and background-colour*/
+        header{
+              display: grid;
+              grid-template-columns: repeat(1,1fr);
+              grid-template-rows: repeat(1,1fr);
+              width:100%;
+              height: auto;
+              position: fixed;
+              top: 0px;
+              right: 0px;
+              left: 0px;
+              background-color: white;
+              z-index: 1;
+        }
+        /*nav unordered list-style,list-style-type,float,and margin-top*/
+        nav ul{
+              list-style: none;
+              list-style-type: none;
+              float: left;
+              margin-top: 10mm;
+
+        }
+        /*nav image width,height,and float*/
+        nav img{
+                  width: 240px;
+                  height: 100px;
+                  float: left;
+        }
+        /*nav list font-size,display,and padding*/
+        nav li{
+              font-size: 22px;
+              display: inline;
+              padding: 10px;
+        }
+        /*internal links for text-decoration,and colour*/
+        .internalLinks{
+                      text-decoration: none;
+                      color: black;
+        }
+        /*internal link hover colour*/
+        .internalLinks:hover{
+                            color: pink;
+        }
+        /*internal link active colour*/
+        .internalLinks:active{
+                            color: red;
+        }
+        /*search bar float*/
+        .searchBar{
+                  float: right;
+        }
+        /*my slides display*/
+        .mySlides {
+                  display:none;
+        }
+        /*slideshow-container display,grid-template-columns,grid-template-rows,width,and height*/
+        .slideshow-container {
+                              display: grid;
+                              grid-template-columns: repeat(1,1fr);
+                              grid-template-rows: repeat(1,1fr);
+                              width: 100%;
+                              height: 650px;
+        }
+        /*previous and next  button cursor,position,top,width,padding,margin-top,colour,font-weight,font-size,transition,and border-radius*/
+        .prev, .next {
+                      cursor: pointer;
+                      position: absolute;
+                      top: 50%;
+                      width: auto;
+                      padding: 16px;
+                      margin-top: 55px;
+                      color: white;
+                      font-weight: bold;
+                      font-size: 18px;
+                      transition: 0.6s ease;
+                      border-radius: 0 3px 3px 0;
+        }
+
+        /*next button right,and border-radius*/
+        .next {
+              right: 6mm;
+              border-radius: 3px 0 0 3px;
+        }
+
+        /*previousa and next hover background-colour*/
+        .prev:hover, .next:hover {
+                                  background-color: rgba(0,0,0,0.8);
+        }
+        /*bottom indicators cursor,height,width,margin,background-colour,border-radius,display,transition*/
+        .dot {
+              cursor: pointer;
+              height: 15px;
+              width: 15px;
+              margin-top:4px;
+              background-color: #bbb;
+              border-radius: 50%;
+              display: inline-block;
+              transition: background-color 0.6s ease;
+        }
+        /*active and hover background-colour for dot indicators*/
+        .active, .dot:hover {
+                            background-color: #717171;
+        }
+        /*overlayer width,height,text-align,top,left,bottom,right,position,and background-colour*/
+        .overlayer{
+                  width: 40%;
+                  height: 250px;
+                  text-align: center;
+                  top: 20%;
+                  left: 30%;
+                  bottom: 0%;
+                  right: 0px;
+                  position: absolute;
+                  background-color: rgba(0,0,0,.3);
+        }
+        /*text colour and font-size*/
+        .text{
+              color: white;
+              font-size: 18px;
+        }
+        /*container display,grid-template-columns,grid-templates-rows,width,height,and padding*/
+        #container{
+                  display: grid;
+                  grid-template-columns: repeat(2,1fr);
+                  grid-template-rows: repeat(1,1fr);
+                  width: 100%;
+                  height: auto;
+                  padding: 28px 130px;
+        }
+        /*bio font-size*/
+        .bio{
+            font-size: 18px;
+        }
+        /*ibutton width,height,border,background-colour,and border-radius*/
+        .ibutton{
+                width: 100px;
+                height: 35px;
+                border: none;
+                background-color: #e38f84;
+                border-radius: 10%;
+        }
+        /*ibutton hover width and height*/
+        .ibutton:hover{
+                      width: 150px;
+                      height: 35px;
+        }
+
+        /*skills display,grid-template-columns,grid-template-rows,width,height,padding,and background-colour*/
+        .skills{
+                  display: grid;
+                  grid-template-columns: repeat(1,1fr);
+                  grid-template-rows: repeat(1,1fr);
+                  width: 100%;
+                  height: auto;
+                  padding: 0px 110px;
+                  background-color: black;
+        }
+        /*services width,height,colour,and text-alignment*/
+        .services{
+                  width: 100%;
+                  height: auto;
+                  color: white;
+                  text-align: center;
+        }
+        /*container1 display,grid-template-columns,grid-template-rows,width,height,and padding*/
+        #container1{
+                  display: grid;
+                  grid-template-columns: repeat(1,1fr);
+                  grid-template-rows: repeat(1,1fr);
+                  width: 100%;
+                  height: auto;
+                  padding: 28px 0px;
+                  /* padding: 2px 30px 30px; */
+        }
+        /*portfolio images display,grid-template-columns,grid-template-rows,width,and height*/
+        .portfolio_images{
+                  display: grid;
+                  grid-template-columns: repeat(1,1fr);
+                  grid-template-rows: repeat(1,1fr);
+                  width: 100%;
+                  height: auto;
+                  padding: 0px 150px;
+        }
+        /*container2 display,grid-template-columns,grid-template-rows,width,height,and padding*/
+        #container2{
+                    display: grid;
+                    grid-template-columns: repeat(1,1fr);
+                    grid-template-rows: repeat(1,1fr);
+                    width: 100%;
+                    height: auto;
+        }
+        /*meet team display,grid-template-columns,grid-template-rows,width and height*/
+        #meet_team{
+                  display: grid;
+                  grid-template-columns: repeat(1,1fr);
+                  grid-template-rows: repeat(1,1fr);
+                  width: 100%;
+                  height: auto;
+        }
+        /*container3 display,grid-template-columns,grid-temoplate-rows,width,height,padding,and background-colour*/
+        #container3{
+                    display: grid;
+                    grid-template-columns: repeat(1,1fr);
+                    grid-template-rows: repeat(1,1fr);
+                    width: 100%;
+                    height: auto;
+                    padding: 14mm;
+                    background-color: black;
+        }
+        /*counter up width,height,and padding-left*/
+        #countUp{
+                width: 100%;
+                height:auto;
+                padding-left: 100px ;
+        }
+        /*counter font-size,border-top,display,and colour*/
+        .counter{
+                font-size: 40px;
+                border-top: 2px solid #e38f84;
+                display: table-cell;
+                color: white;
+        }
+        /*counter terms font-size,and colour*/
+        .counterTerm{
+                    font-size: 18px;
+                    color: white;
+        }
+        /*container4 didplay,grid-template-columns,grid-template-rows,width,height,and text-alignment*/
+        #container4{
+                    display: grid;
+                    grid-template-columns: repeat(1,1fr);
+                    grid-template-rows: repeat(1,1fr);
+                    width: 100%;
+                    height: 200px;
+                    text-align: center;
+        }
+        /*email font-size*/
+        #email{
+              font-size: 25px;
+        }
+        /*valid display,and colour*/
+        #valid{
+              display: none;
+              color: green;
+        }
+        /*invalid display,and colour*/
+        #invalid{
+                display: none;
+                color: red;
+        }
+        /*submit width,height,font-size,border,border-radius,colour,background-colour,box-shadow,and padding-top*/
+        #submit{
+                width: 100px;
+                height: 40px;
+                font-size: 16px;
+                border: none;
+                border-radius: 10%;
+                color: white;
+                background-color: #e38f84;
+                box-shadow: none;
+                padding-top: 2mm;
+        }
+        /*carousel display,grid-template-columns,grid-template-rows,width,height,background-colour and overflow*/
+        #carousel{
+                  display: grid;
+                  grid-template-columns: repeat(1,1fr);
+                  grid-template-rows: repeat(1,1fr);
+                  width: 100%;
+                  height: auto;;
+                  background-color: black;
+                  overflow: hidden;
+        }
+        /*carousel inner width,height,float,and overflow*/
+        #carousel_inner {
+                        width:100%;
+                        height: auto;
+        }
+        /*carousel unordered list and images width,and height*/
+        #carousel_ul li img {
+                            width: 100%;
+                            height: 150px;
+
+        }
+        /*carousel unordered list position,left,list-style-type,margin,padding,top,width,and padding-bottom*/
+        #carousel_ul {
+                      position: relative;
+                      list-style-type: none;
+                      margin: 0px;
+                      padding: 0px;
+                      top: 30px;
+                      width:112%;
+        }
+        /*carousel unordered list width,height,padding,margin,and float*/
+        #carousel_ul li {
+                        width: 200px;
+                        height: 110px;
+                        padding: 0px;
+                        margin-right: 10px;
+                        float: left;
+        }
+        /*carousel unordered list images margin-bottom,cursor,cursor,and border*/
+        #carousel_ul li img {
+                            cursor: pointer;
+                            cursor: hand;
+                            border: 0px;
+        }
+
+        /*container5 display,grid-template-column,grid-template-rows,width,height and padding-left*/
+        #container5{
+                    display: grid;
+                    grid-template-columns: repeat(4,1fr);
+                    grid-template-rows: repeat(1,1fr);
+                    width: 100%;
+                    height: 330px;
+                    padding-left: 40px;
+        }
+
+        /*company unordered list-style*/
+        .company ul{
+                    list-style: square;
+        }
+        /*company anchor tag text-decoration,and colour*/
+        .company a{
+                  text-decoration: none;
+                  color: black;
+        }
+        /*company anchor hover colour*/
+        .company a:hover{
+                        color: red;
+        }
+        /*company anchor active colour*/
+        .company a:active{
+                          color: red;
+        }
+
+        /*help and support unordered list-style*/
+        .helpAndSupport ul{
+                        list-style: square;
+        }
+
+        /*contact unordered list-style and list-style-type*/
+        .contact ul{
+                    list-style: none;
+                    list-style-type: none;
+        }
+        /*signature bar width,height,background-colour,padding,and clear*/
+        .signatureBar{
+                      display: grid;
+                      grid-template-columns: repeat(2,1fr);
+                      grid-template-rows: repeat(1,1fr);
+                      width: 100%;
+                      height: auto;
+                      background-color:#e38f84;
+        }
+        /*copyright width and height*/
+        #copyright{
+                  width: 40%;
+                  height: 40px;
+        }
+        /*back to top width,height,opacity,and float*/
+        #backToTop{
+                  width: 5%;
+                  height: 40px;
+                  opacity: 0.5;
+                  float: right;
+        }
+}
+/* Media query for ipads */
+/* Portrait and Landscape */
+@media only screen
+  and (min-device-width: 481px)
+  and (max-device-width: 768px)
+  and (-webkit-min-device-pixel-ratio: 1) {
+    /*this is homepage stylesheet*/
+    /*general styling*/
+        *{
+          box-sizing: border-box;
+        }
+        /*header for display,grid-template-columns,grid-template-rows,width,height,position,top,right,left,and background-colour*/
+        header{
+              display: grid;
+              grid-template-columns: repeat(1,1fr);
+              grid-template-rows: repeat(1,1fr);
+              width:100%;
+              height: auto;
+              position: fixed;
+              top: 0px;
+              right: 0px;
+              left: 0px;
+              background-color: white;
+              z-index: 1;
+        }
+        /*nav unordered list-style,list-style-type,float,and margin-top*/
+        nav ul{
+              list-style: none;
+              list-style-type: none;
+              float: left;
+              margin-top: 10mm;
+
+        }
+        /*nav image width,height,and float*/
+        nav img{
+                  width: 240px;
+                  height: 100px;
+                  float: left;
+        }
+        /*nav list font-size,display,and padding*/
+        nav li{
+              font-size: 22px;
+              display: inline;
+              padding: 10px;
+        }
+        /*internal links for text-decoration,and colour*/
+        .internalLinks{
+                      text-decoration: none;
+                      color: black;
+        }
+        /*internal link hover colour*/
+        .internalLinks:hover{
+                            color: pink;
+        }
+        /*internal link active colour*/
+        .internalLinks:active{
+                            color: red;
+        }
+        /*search bar float*/
+        .searchBar{
+                  float: right;
+        }
+        /*my slides display*/
+        .mySlides {
+                  display:none;
+        }
+        /*slideshow-container display,grid-template-columns,grid-template-rows,width,and height*/
+        .slideshow-container {
+                              display: grid;
+                              grid-template-columns: repeat(1,1fr);
+                              grid-template-rows: repeat(1,1fr);
+                              width: 100%;
+                              height: 650px;
+        }
+        /*previous and next  button cursor,position,top,width,padding,margin-top,colour,font-weight,font-size,transition,and border-radius*/
+        .prev, .next {
+                      cursor: pointer;
+                      position: absolute;
+                      top: 50%;
+                      width: auto;
+                      padding: 16px;
+                      margin-top: 55px;
+                      color: white;
+                      font-weight: bold;
+                      font-size: 18px;
+                      transition: 0.6s ease;
+                      border-radius: 0 3px 3px 0;
+        }
+
+        /*next button right,and border-radius*/
+        .next {
+              right: 6mm;
+              border-radius: 3px 0 0 3px;
+        }
+
+        /*previousa and next hover background-colour*/
+        .prev:hover, .next:hover {
+                                  background-color: rgba(0,0,0,0.8);
+        }
+        /*bottom indicators cursor,height,width,margin,background-colour,border-radius,display,transition*/
+        .dot {
+              cursor: pointer;
+              height: 15px;
+              width: 15px;
+              margin-top:4px;
+              background-color: #bbb;
+              border-radius: 50%;
+              display: inline-block;
+              transition: background-color 0.6s ease;
+        }
+        /*active and hover background-colour for dot indicators*/
+        .active, .dot:hover {
+                            background-color: #717171;
+        }
+        /*overlayer width,height,text-align,top,left,bottom,right,position,and background-colour*/
+        .overlayer{
+                  width: 40%;
+                  height: 250px;
+                  text-align: center;
+                  top: 15%;
+                  left: 30%;
+                  bottom: 0%;
+                  right: 0px;
+                  position: absolute;
+                  background-color: rgba(0,0,0,.3);
+        }
+        /*text colour and font-size*/
+        .text{
+              color: white;
+              font-size: 18px;
+        }
+        /*container display,grid-template-columns,grid-templates-rows,width,height,and padding*/
+        #container{
+                  display: grid;
+                  grid-template-columns: repeat(1,1fr);
+                  grid-template-rows: repeat(2,1fr);
+                  width: 100%;
+                  height: auto;
+                  padding: 28px 130px;
+        }
+        /*bio font-size*/
+        .bio{
+            font-size: 18px;
+        }
+        /*ibutton width,height,border,background-colour,and border-radius*/
+        .ibutton{
+                width: 100px;
+                height: 35px;
+                border: none;
+                background-color: #e38f84;
+                border-radius: 10%;
+        }
+        /*ibutton hover width and height*/
+        .ibutton:hover{
+                      width: 150px;
+                      height: 35px;
+        }
+
+        /*skills display,grid-template-columns,grid-template-rows,width,height,padding,and background-colour*/
+        .skills{
+                  display: grid;
+                  grid-template-columns: repeat(1,1fr);
+                  grid-template-rows: repeat(1,1fr);
+                  width: 100%;
+                  height: auto;
+                  padding: 0px 110px;
+                  background-color: black;
+        }
+        /*services width,height,colour,and text-alignment*/
+        .services{
+                  width: 100%;
+                  height: auto;
+                  color: white;
+                  text-align: center;
+        }
+        /*container1 display,grid-template-columns,grid-template-rows,width,height,and padding*/
+        #container1{
+                  display: grid;
+                  grid-template-columns: repeat(1,1fr);
+                  grid-template-rows: repeat(1,1fr);
+                  width: 100%;
+                  height: auto;
+                  padding: 28px 0px;
+        }
+        /*portfolio images display,grid-template-columns,grid-template-rows,width,and height*/
+        .portfolio_images{
+                  display: grid;
+                  grid-template-columns: repeat(1,1fr);
+                  grid-template-rows: repeat(2,1fr);
+                  width: 100%;
+                  padding: 0px 120px;
+                  height: auto;
+        }
+        /*container2 display,grid-template-columns,grid-template-rows,width,height,and padding*/
+        #container2{
+                    display: grid;
+                    grid-template-columns: repeat(1,1fr);
+                    grid-template-rows: repeat(1,1fr);
+                    width: 100%;
+                    height: auto;
+                    padding: 2mm 35mm 6mm 35mm;
+        }
+        /*meet team display,grid-template-columns,grid-template-rows,width and height*/
+        #meet_team{
+                  display: grid;
+                  grid-template-columns: repeat(1,1fr);
+                  grid-template-rows: repeat(1,1fr);
+                  width: 100%;
+                  height: auto;
+        }
+        /*container3 display,grid-template-columns,grid-temoplate-rows,width,height,padding,and background-colour*/
+        #container3{
+                    display: grid;
+                    grid-template-columns: repeat(1,1fr);
+                    grid-template-rows: repeat(1,1fr);
+                    width: 100%;
+                    height: auto;
+                    padding: 14mm;
+                    background-color: black;
+        }
+        /*counter up width,height,and padding-left*/
+        #countUp{
+                width: 100%;
+                height:auto;
+                padding-left: 100px ;
+        }
+        /*counter font-size,border-top,display,and colour*/
+        .counter{
+                font-size: 40px;
+                border-top: 2px solid #e38f84;
+                display: table-cell;
+                color: white;
+        }
+        /*counter terms font-size,and colour*/
+        .counterTerm{
+                    font-size: 18px;
+                    color: white;
+        }
+        /*container4 didplay,grid-template-columns,grid-template-rows,width,height,and text-alignment*/
+        #container4{
+                    display: grid;
+                    grid-template-columns: repeat(1,1fr);
+                    grid-template-rows: repeat(1,1fr);
+                    width: 100%;
+                    height: 200px;
+                    text-align: center;
+        }
+        /*email font-size*/
+        #email{
+              font-size: 25px;
+        }
+        /*valid display,and colour*/
+        #valid{
+              display: none;
+              color: green;
+        }
+        /*invalid display,and colour*/
+        #invalid{
+                display: none;
+                color: red;
+        }
+        /*submit width,height,font-size,border,border-radius,colour,background-colour,box-shadow,and padding-top*/
+        #submit{
+                width: 100px;
+                height: 40px;
+                font-size: 16px;
+                border: none;
+                border-radius: 10%;
+                color: white;
+                background-color: #e38f84;
+                box-shadow: none;
+                padding-top: 2mm;
+        }
+        /*carousel display,grid-template-columns,grid-template-rows,width,height,background-colour and overflow*/
+        #carousel{
+                  display: grid;
+                  grid-template-columns: repeat(1,1fr);
+                  grid-template-rows: repeat(1,1fr);
+                  width: 100%;
+                  height: auto;
+                  background-color: black;
+                  overflow: hidden;
+        }
+        /*carousel inner width,height,float,and overflow*/
+        #carousel_inner {
+                        width:100%;
+                        height: 160px;
+        }
+        /*carousel unordered list and images width,and height*/
+        #carousel_ul li img {
+                            width: 100%;
+                            height: 150px;
+
+        }
+        /*carousel unordered list position,left,list-style-type,margin,padding,top,width,and padding-bottom*/
+        #carousel_ul {
+                      position: relative;
+                      list-style-type: none;
+                      margin: 0px;
+                      padding: 0px;
+                      top: 30px;
+                      width:112%;
+        }
+        /*carousel unordered list width,height,padding,margin,and float*/
+        #carousel_ul li {
+                        width: 200px;
+                        height: 110px;
+                        padding: 0px;
+                        margin-right: 10px;
+                        float: left;
+        }
+        /*carousel unordered list images margin-bottom,cursor,cursor,and border*/
+        #carousel_ul li img {
+                            cursor: pointer;
+                            cursor: hand;
+                            border: 0px;
+        }
+
+        /*container5 display,grid-template-column,grid-template-rows,width,height and padding-left*/
+        #container5{
+                    display: grid;
+                    grid-template-columns: repeat(4,1fr);
+                    grid-template-rows: repeat(1,1fr);
+                    width: 100%;
+                    height: 330px;
+                    padding-left: 40px;
+        }
+
+        /*company unordered list-style*/
+        .company ul{
+                    list-style: square;
+        }
+        /*company anchor tag text-decoration,and colour*/
+        .company a{
+                  text-decoration: none;
+                  color: black;
+        }
+        /*company anchor hover colour*/
+        .company a:hover{
+                        color: red;
+        }
+        /*company anchor active colour*/
+        .company a:active{
+                          color: red;
+        }
+
+        /*help and support unordered list-style*/
+        .helpAndSupport ul{
+                        list-style: square;
+        }
+
+        /*contact unordered list-style and list-style-type*/
+        .contact ul{
+                    list-style: none;
+                    list-style-type: none;
+        }
+        /*signature bar width,height,background-colour,padding,and clear*/
+        .signatureBar{
+                      display: grid;
+                      grid-template-columns: repeat(2,1fr);
+                      grid-template-rows: repeat(1,1fr);
+                      width: 100%;
+                      height: auto;
+                      background-color:#e38f84;
+        }
+        /*copyright width and height*/
+        #copyright{
+                  width: 40%;
+                  height: 40px;
+        }
+        /*back to top width,height,opacity,and float*/
+        #backToTop{
+                  width: 5%;
+                  height: 40px;
+                  opacity: 0.5;
+                  float: right;
+        }
+}
+/* Media query for standard laptops */
+/* ----------- Non-Retina Screens ----------- */
+@media screen
+  and (min-device-width: 768px)
+  and (max-device-width: 1600px)
+  and (-webkit-min-device-pixel-ratio: 1) {
+    /*this is homepage stylesheet*/
+    /*general styling*/
+        *{
+          box-sizing: border-box;
+        }
+        /*header for display,grid-template-columns,grid-template-rows,width,height,position,top,right,left,and background-colour*/
+        header{
+              display: grid;
+              grid-template-columns: repeat(1,1fr);
+              grid-template-rows: repeat(1,1fr);
+              width:100%;
+              height: auto;
+              position: fixed;
+              top: 0px;
+              right: 0px;
+              left: 0px;
+              background-color: white;
+              z-index: 1;
+        }
+        /*nav unordered list-style,list-style-type,float,and margin-top*/
+        nav ul{
+              list-style: none;
+              list-style-type: none;
+              float: left;
+              margin-top: 10mm;
+
+        }
+        /*nav image width,height,and float*/
+        nav img{
+                  width: 240px;
+                  height: 100px;
+                  float: left;
+        }
+        /*nav list font-size,display,and padding*/
+        nav li{
+              font-size: 22px;
+              display: inline;
+              padding: 40px;
+        }
+        /*internal links for text-decoration,and colour*/
+        .internalLinks{
+                      text-decoration: none;
+                      color: black;
+        }
+        /*internal link hover colour*/
+        .internalLinks:hover{
+                            color: pink;
+        }
+        /*internal link active colour*/
+        .internalLinks:active{
+                            color: red;
+        }
+        /*search bar float*/
+        .searchBar{
+                  float: right;
+        }
+        /*my slides display*/
+        .mySlides {
+                  display:none;
+        }
+        /*slideshow-container display,grid-template-columns,grid-template-rows,width,and height*/
+        .slideshow-container {
+                              display: grid;
+                              grid-template-columns: repeat(1,1fr);
+                              grid-template-rows: repeat(1,1fr);
+                              width: 100%;
+                              height: 650px;
+        }
+        /*previous and next  button cursor,position,top,width,padding,margin-top,colour,font-weight,font-size,transition,and border-radius*/
+        .prev, .next {
+                      cursor: pointer;
+                      position: absolute;
+                      top: 50%;
+                      width: auto;
+                      padding: 16px;
+                      margin-top: 55px;
+                      color: white;
+                      font-weight: bold;
+                      font-size: 18px;
+                      transition: 0.6s ease;
+                      border-radius: 0 3px 3px 0;
+        }
+
+        /*next button right,and border-radius*/
+        .next {
+              right: 6mm;
+              border-radius: 3px 0 0 3px;
+        }
+
+        /*previousa and next hover background-colour*/
+        .prev:hover, .next:hover {
+                                  background-color: rgba(0,0,0,0.8);
+        }
+        /*bottom indicators cursor,height,width,margin,background-colour,border-radius,display,transition*/
+        .dot {
+              cursor: pointer;
+              height: 15px;
+              width: 15px;
+              margin-top:4px;
+              background-color: #bbb;
+              border-radius: 50%;
+              display: inline-block;
+              transition: background-color 0.6s ease;
+        }
+        /*active and hover background-colour for dot indicators*/
+        .active, .dot:hover {
+                            background-color: #717171;
+        }
+        /*overlayer width,height,text-align,top,left,bottom,right,position,and background-colour*/
+        .overlayer{
+                  width: 40%;
+                  height: 250px;
+                  text-align: center;
+                  top: 45%;
+                  left: 30%;
+                  bottom: 0%;
+                  right: 0px;
+                  position: absolute;
+                  background-color: rgba(0,0,0,.3);
+        }
+        /*text colour and font-size*/
+        .text{
+              color: white;
+              font-size: 18px;
+        }
+        /*container display,grid-template-columns,grid-templates-rows,width,height,and padding*/
+        #container{
+                  display: grid;
+                  grid-template-columns: repeat(2,1fr);
+                  grid-template-rows: repeat(1,1fr);
+                  width: 100%;
+                  height: auto;
+                  padding: 28px 130px;
+        }
+        /*bio font-size*/
+        .bio{
+            font-size: 18px;
+        }
+        /*ibutton width,height,border,background-colour,and border-radius*/
+        .ibutton{
+                width: 100px;
+                height: 35px;
+                border: none;
+                background-color: #e38f84;
+                border-radius: 10%;
+        }
+        /*ibutton hover width and height*/
+        .ibutton:hover{
+                      width: 150px;
+                      height: 35px;
+        }
+
+        /*skills display,grid-template-columns,grid-template-rows,width,height,padding,and background-colour*/
+        .skills{
+                  display: grid;
+                  grid-template-columns: repeat(1,1fr);
+                  grid-template-rows: repeat(1,1fr);
+                  width: 100%;
+                  height: auto;
+                  padding: 0px 110px;
+                  background-color: black;
+        }
+        /*services width,height,colour,and text-alignment*/
+        .services{
+                  width: 100%;
+                  height: auto;
+                  color: white;
+                  text-align: center;
+        }
+        /*container1 display,grid-template-columns,grid-template-rows,width,height,and padding*/
+        #container1{
+                  display: grid;
+                  grid-template-columns: repeat(1,1fr);
+                  grid-template-rows: repeat(1,1fr);
+                  width: 100%;
+                  height: auto;
+                  padding: 2mm 30mm 6mm 35mm;
+        }
+        /*portfolio images display,grid-template-columns,grid-template-rows,width,and height*/
+        .portfolio_images{
+                  display: grid;
+                  grid-template-columns: repeat(4,1fr);
+                  grid-template-rows: repeat(1,1fr);
+                  width: 100%;
+                  height: auto;
+        }
+        /*container2 display,grid-template-columns,grid-template-rows,width,height,and padding*/
+        #container2{
+                    display: grid;
+                    grid-template-columns: repeat(1,1fr);
+                    grid-template-rows: repeat(1,1fr);
+                    width: 100%;
+                    height: auto;
+                    padding: 2mm 35mm 6mm 35mm;
+        }
+        /*meet team display,grid-template-columns,grid-template-rows,width and height*/
+        #meet_team{
+                  display: grid;
+                  grid-template-columns: repeat(2,1fr);
+                  grid-template-rows: repeat(1,1fr);
+                  width: 100%;
+                  height: auto;
+        }
+        /*container3 display,grid-template-columns,grid-temoplate-rows,width,height,padding,and background-colour*/
+        #container3{
+                    display: grid;
+                    grid-template-columns: repeat(1,1fr);
+                    grid-template-rows: repeat(1,1fr);
+                    width: 100%;
+                    height: auto;
+                    padding: 14mm;
+                    background-color: black;
+        }
+        /*counter up width,height,and padding-left*/
+        #countUp{
+                width: 100%;
+                height:auto;
+                padding-left: 100px ;
+        }
+        /*counter font-size,border-top,display,and colour*/
+        .counter{
+                font-size: 40px;
+                border-top: 2px solid #e38f84;
+                display: table-cell;
+                color: white;
+        }
+        /*counter terms font-size,and colour*/
+        .counterTerm{
+                    font-size: 18px;
+                    color: white;
+        }
+        /*container4 didplay,grid-template-columns,grid-template-rows,width,height,and text-alignment*/
+        #container4{
+                    display: grid;
+                    grid-template-columns: repeat(1,1fr);
+                    grid-template-rows: repeat(1,1fr);
+                    width: 100%;
+                    height: 200px;
+                    text-align: center;
+        }
+        /*email font-size*/
+        #email{
+              font-size: 25px;
+        }
+        /*valid display,and colour*/
+        #valid{
+              display: none;
+              color: green;
+        }
+        /*invalid display,and colour*/
+        #invalid{
+                display: none;
+                color: red;
+        }
+        /*submit width,height,font-size,border,border-radius,colour,background-colour,box-shadow,and padding-top*/
+        #submit{
+                width: 100px;
+                height: 40px;
+                font-size: 16px;
+                border: none;
+                border-radius: 10%;
+                color: white;
+                background-color: #e38f84;
+                box-shadow: none;
+                padding-top: 2mm;
+        }
+        /*carousel display,grid-template-columns,grid-template-rows,width,height,background-colour and overflow*/
+        #carousel{
+                  display: grid;
+                  grid-template-columns: repeat(1,1fr);
+                  grid-template-rows: repeat(1,1fr);
+                  width: 100%;
+                  height: auto;
+                  background-color: black;
+                  overflow: hidden;
+        }
+        /*carousel inner width,height,float,and overflow*/
+        #carousel_inner {
+                        width:100%;
+                        height: 160px;
+        }
+        /*carousel unordered list and images width,and height*/
+        #carousel_ul li img {
+                            width: 100%;
+                            height: 150px;
+
+        }
+        /*carousel unordered list position,left,list-style-type,margin,padding,top,width,and padding-bottom*/
+        #carousel_ul {
+                      position: relative;
+                      list-style-type: none;
+                      margin: 0px;
+                      padding: 0px;
+                      top: 30px;
+                      width:112%;
+        }
+        /*carousel unordered list width,height,padding,margin,and float*/
+        #carousel_ul li {
+                        width: 200px;
+                        height: 110px;
+                        padding: 0px;
+                        margin-right: 10px;
+                        float: left;
+        }
+        /*carousel unordered list images margin-bottom,cursor,cursor,and border*/
+        #carousel_ul li img {
+                            cursor: pointer;
+                            cursor: hand;
+                            border: 0px;
+        }
+
+        /*container5 display,grid-template-column,grid-template-rows,width,height and padding-left*/
+        #container5{
+                    display: grid;
+                    grid-template-columns: repeat(4,1fr);
+                    grid-template-rows: repeat(1,1fr);
+                    width: 100%;
+                    height: 330px;
+                    padding-left: 40px;
+        }
+
+        /*company unordered list-style*/
+        .company ul{
+                    list-style: square;
+        }
+        /*company anchor tag text-decoration,and colour*/
+        .company a{
+                  text-decoration: none;
+                  color: black;
+        }
+        /*company anchor hover colour*/
+        .company a:hover{
+                        color: red;
+        }
+        /*company anchor active colour*/
+        .company a:active{
+                          color: red;
+        }
+
+        /*help and support unordered list-style*/
+        .helpAndSupport ul{
+                        list-style: square;
+        }
+
+        /*contact unordered list-style and list-style-type*/
+        .contact ul{
+                    list-style: none;
+                    list-style-type: none;
+        }
+        /*signature bar width,height,background-colour,padding,and clear*/
+        .signatureBar{
+                      display: grid;
+                      grid-template-columns: repeat(2,1fr);
+                      grid-template-rows: repeat(1,1fr);
+                      width: 100%;
+                      height: auto;
+                      background-color:#e38f84;
+        }
+        /*copyright width and height*/
+        #copyright{
+                  width: 40%;
+                  height: 40px;
+        }
+        /*back to top width,height,opacity,and float*/
+        #backToTop{
+                  width: 5%;
+                  height: 40px;
+                  opacity: 0.5;
+                  float: right;
+        }
+}

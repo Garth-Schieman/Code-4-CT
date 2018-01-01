@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Code4CT</title>
+    <!-- link to icon for title -->
+    <link rel="icon" type="image/PNG" href="images/logo.png">
+    <!-- reference to font awesome icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- reference to jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <!-- link to my external stylesheet-->
+    <link rel="stylesheet" type="text/css" href="css_styling/homepage.css">
+  </head>
+  <body>
+    <!-- header for navigation bar with company logo,internal links,and form for input and search button  -->
+    <header>
+      <nav>
+        <img src="images/logo.png" alt="logo" width="100px" height="15%">
+        <ul>
+          <li><a class="internalLinks" href="homepage.html">Home</a></li>
+          <li><a class="internalLinks" href="course.html">Course</a></li>
+          <li><a class="internalLinks" href="about.html">About</a></li>
+          <li><a class="internalLinks" href="portfolio.html">Portfolio</a></li>
+          <li><a class="internalLinks" href="contact.html">Contact</a></li>
+          <li>
+              <form class="searchBar" action="index.html" method="post">
+                <input type="text" name="search" value="" placeholder="search...">
+                <button type="button" name="button"><i class="fa fa-search"></i></button>
+              </form>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <!-- div class for slideshow-container with div's for slides h1 headings, paragraph tags, and buttons  and overlayer div-->
+    <div class="slideshow-container">
+
+      <div class="mySlides">
+        <img src="images/slide1.jpg" style="width:100%" height="650px">
+        <div class="overlayer">
+          <h1 style="color:white;">Code for Cape Town</h1>
+          <p class="text">We want to see young women empowered to leverage technology for social innovation, so that there is greater diversity in the African tech industry. We want high school girls to have an enabling environment to imagine and create new technology that is relevant to a South African context.</p>
+        </div>
+      </div>
+
+      <div class="mySlides">
+        <img src="images/slide2.jpg" style="width:100%" height="650px">
+        <div class="overlayer">
+          <h1 style="color:white;">Code for Cape Town</h1>
+          <p class="text">We want to see young women empowered to leverage technology for social innovation, so that there is greater diversity in the African tech industry. We want high school girls to have an enabling environment to imagine and create new technology that is relevant to a South African context.</p>
+        </div>
+      </div>
+
+      <div class="mySlides">
+        <img src="images/slide3.jpg" style="width:100%" height="650px">
+        <div class="overlayer">
+          <h1 style="color:white;">Code for Cape Town</h1>
+          <p class="text">We want to see young women empowered to leverage technology for social innovation, so that there is greater diversity in the African tech industry. We want high school girls to have an enabling environment to imagine and create new technology that is relevant to a South African context.</p>
+        </div>
+      </div>
+      <!-- anchor tags for onclick previous and next button -->
+      <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+      <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+
+    </div>
+    <!-- div with style text-alignment and span for class dot -->
+    <div style="text-align:center">
+      <span class="dot" onclick="currentSlide(1)"></span>
+      <span class="dot" onclick="currentSlide(2)"></span>
+      <span class="dot" onclick="currentSlide(3)"></span>
+    </div>
+
+    <!-- section id container for for div class bio with h1 inline styling heading with span tags and paragraph tags for content and button  -->
+    <section id="container">
+      <div class="bio">
+        <h1 style="border-bottom:1px solid gray;"><span style="border-bottom:2px solid #e38f84;">Who</span> are we?</h1>
+        <p>We equip high potential female learners with the coding, problem solving and life skills that will allow them to leverage technology to contribute meaningfully to South Africa’s innovation system. The program exposes young women to how technology can be used for social innovation and helps them navigate critical study decisions.</p>
+        <button type="button" name="button" class="ibutton"><a href="about.html" style="text-decoration:none;color:white;">Read More</a></button>
+      </div>
+      <!-- div for class bio_images with table row and table data for images of the organisation -->
+      <div class="bio_images">
+        <table>
+          <tr>
+            <td><img src="images/bio_image1.JPG" alt="bio1" width="200px" height="200px"></td>
+            <td><img src="images/bio_image2.JPG" alt="bio2" width="200px" height="200px"></td>
+          </tr>
+          <tr>
+            <td><img src="images/bio_image3.JPG" alt="bio3" width="200px" height="200px"></td>
+            <td><img src="images/bio_image4.JPG" alt="bio4" width="200px" height="200px"></td>
+          </tr>
+        </table>
+      </div>
+    </section>
+    <!-- div class for skills with a class div for services and table inline style for text-alignment,with table data for images and h3 headings and paragraph tags -->
+    <div class="skills">
+      <div class="services">
+        <table style="text-align:center;">
+          <tr>
+            <td><img src="images/002-technology.png" alt="coding" width="100px" height="100px"></td>
+            <td><img src="images/003-multimedia.png" alt="communication" width="100px" height="100px"></td>
+            <td><img src="images/001-tools.png" alt="problemSolving" width="100px" height="100px"></td>
+          </tr>
+          <tr>
+            <td><h3>Coding</h3></td>
+            <td><h3>Communication</h3></td>
+            <td><h3>Problem Solving</h3></td>
+          </tr>
+          <tr>
+            <td>
+              <p>Learn how to build your own websites using HTML, CSS, JavaScript & JQuery. Go on to explore exciting modules from game development to user experience design.</p>
+            </td>
+            <td>
+              <p>Learn how to pitch ideas, represent yourself online, communicate professionally and work with online collaboration tools.</p>
+            </td>
+            <td>
+              <p>Apply your coding skills to issues you are interested in. You will learn how to tackle complex problems using the design thinking process.</p>
+            </td>
+          </tr>
+        </table>
+      </div>
+    </div>
+    <!-- section id container1 for h1 inline styling heading, paragraph tags,unordered-list,div's containing tables for portfolio images -->
+    <section id="container1">
+
+      <h1 style="border-bottom:1px solid gray;"><span style="border-bottom:2px solid #e38f84;">Our</span> awesome portfolio:</h1>
+      <p>Over the past 3 years, Code for Cape Town has reached over 600 young women with coding and social innovation. Not only have they been exposed to coding but they have also done careers and life skills courses, design thinking workshops and social innovation projects to address local challenges.</p>
+      <p>Our alumnae that joined the program in 2014 and 2015 have now left high school and many of them have gone on to enter STEM related tertiary studies or skills development.</p>
+      <p>Out of a total of 50 learners:</p>
+      <ul>
+        <li>23 are studying at university or a university of technology</li>
+        <li>4 are enrolled in Information Systems or Computer Science</li>
+        <li>4 are enrolled in Engineering</li>
+        <li>6 are enrolled in Science</li>
+        <li>5 are enrolled in Health</li>
+        <li>12 are enrolled in an IT skills training program/internship</li>
+      </ul>
+
+      <div class="portfolio_images">
+        <div class="portfolio_images1">
+          <table>
+            <tr>
+              <td><img src="images/portfolioImage1.JPG" alt="portfolioImage1" width="240px" height="200px"></td>
+              <td><img src="images/portfolioImage2.JPG" alt="portfolioImage2" width="240px" height="200px"></td>
+            </tr>
+            <tr>
+              <td><img src="images/portfolioImage3.JPG" alt="portfolioImage3" width="240px" height="200px"></td>
+              <td><img src="images/portfolioImage4.JPG" alt="portfolioImage4" width="240px" height="200px"></td>
+            </tr>
+          </table>
+        </div>
+        <div class="portfolio_images2">
+          <table>
+            <tr>
+              <td><img src="images/portfolioImage5.jpg" alt="portfolioImage5" width="527px" height="408px"></td>
+            </tr>
+          </table>
+        </div>
+      </div>
+    </section>
+    <!-- container2 obtaining inline styling h2 and h3 headings for team members names table tags for team member profile and span tag for inline styling for job title. An unordered list for various social media icons-->
+    <section id="container2">
+      <h2 style="border-bottom:1px solid gray;"><span style="border-bottom:2px solid #e38f84;">Meet</span> our team:</h2>
+
+      <div id="meet_team">
+        <div class="Emma_Andrea">
+          <table>
+            <tr>
+              <td><span><img src="images/Emma.jpg" alt="" width="250px" height="300px"></span></td>
+              <td>
+                <h3>Emma Dicks</h3>
+                <span style="color:gray;">Founder and Director</span>
+                <p>Emma is passionate about providing high quality education that enables young people to bring innovative ideas to life and play an active role in South Africa’s economy.</p>
+              </td>
+            </tr>
+            <tr>
+              <td><span><img src="images/Andrea.jpg" alt="" width="250px" height="300px"></span></td>
+              <td>
+                <h3>Andrea Petersen</h3>
+                <span style="color:gray;">Operations Lead</span>
+                <p>Andrea thrives on seeing key players in the Code4CT ecosystem discover how they can make the greatest impact.</p>
+              </td>
+            </tr>
+          </table>
+        </div>
+        <div class="Tegan_Tracy">
+          <table>
+            <tr>
+              <td><span><img src="images/Tegan.jpg" alt="tegan" width="250px" height="300px"></span></td>
+              <td>
+                <h3>Tegan Crous</h3>
+                <span style="color:gray;">Program Lead</span>
+                <p>Tegan heads up the high school program.She is spurred on by a heart for people and seeing them pursue their potential in a safe, fun and nurturing environment.</p>
+              </td>
+            </tr>
+            <tr>
+              <td><span><img src="images/Tracy.jpg" alt="tracy" width="250px" height="300px"></span></td>
+              <td>
+                <h3>Tracy-Anne Sikenjana</h3>
+                <span style="color:gray;">Leadership Program Manager</span>
+                <p>Tracy joined the Code4CT program in 2015 and then matriculated from Rustenburg Girls’ High in 2016. She decided to intern with Code4CT to give back to an organisation that had a large impact on her personal growth and development.</p>
+              </td>
+            </tr>
+          </table>
+        </div>
+      </div>
+
+    </section>
+    <!-- section id container3 table and div's for countup data -->
+    <section id="container3">
+        <table id="countUp">
+          <tr>
+            <td><div class="counter" data-count="3000">0</div></td>
+            <td><div class="counter" data-count="780">0</div></td>
+            <td><div class="counter" data-count="3120">0</div></td>
+            <td><div class="counter" data-count="8765">0</div></td>
+          </tr>
+          <tr>
+            <td><p class="counterTerm">Cup of coffee</p></td>
+            <td><p class="counterTerm">Number of girls</p></td>
+            <td><p class="counterTerm">Projects completed</p></td>
+            <td><p class="counterTerm">Hours of coding</p></td>
+          </tr>
+        </table>
+    </section>
+    <!-- form id container4 for h2 headings,span and p tags for brief and valid or invalid text, with input field for email and submit button -->
+    <section id="container4">
+      <div class="email_subscribtion">
+        <h2><span style="padding-right:2mm;"><img src="images/subscribe.png" alt="Subscribe" width="30px" height="30px"></span>Subscribe To Us:</h2>
+        <p>Individuals and companies may choose to align themselves to our work by becoming a #FriendofCode4CT.</p>
+        <form >
+            <input type="text" name="" value="" id="email" placeholder="enter your email...">
+            <button type="button" name="button" id="submit">Submit</button>
+        </form>
+        <p id="valid">Well done!!! valid email</p>
+        <p id="invalid">Invalid email, Please try again!</p>
+      </div>
+    </section>
+    <!-- section id for carousel,div id carousel-container,wuth div id carousel inner with unordered list with anchor tags consisting for partners logo   -->
+    <section id="carousel">
+      <div id='carousel_container'>
+        <div id='carousel_inner'>
+          <ul id='carousel_ul'>
+            <li>
+              <a href='#'>
+                <img src="images/deloitte-logo..jpg" alt="">
+              </a>
+            </li>
+            <li>
+              <a href='#'>
+                <img src="images/lwandlelogo..jpg" alt="">
+              </a>
+            </li>
+            <li>
+              <a href='#'>
+                <img src="images/mazars-logo..jpg" alt="">
+              </a>
+            </li>
+            <li>
+              <a href='#'>
+                <img src="images/Mobenzi_Logo..jpg" alt="">
+              </a>
+            </li>
+            <li>
+              <a href='#'>
+                <img src="images/openboxlogo..jpg" alt="">
+              </a>
+            </li>
+            <li>
+              <a href='#'>
+                <img src="images/Takealot-logo..jpg" alt="">
+              </a>
+            </li>
+            <li>
+              <a href='#'>
+                <img src="images/TNS-logo..jpg" alt="">
+              </a>
+            </li>
+        </ul>
+        </div>
+      </div>
+    </section>
+    <!-- footer for id container5  with section tag for div class legal,company,help and support,and contact -->
+    <footer>
+      <section id="container5">
+        <!-- class legal with h3 heading and paragraph tags for text -->
+        <div class="legal">
+          <h3>Legal:</h3>
+          <p>Code for Cape Town is a project of Innovate South Africa, which is a registered non-profit (137806NPO) and a Public Beneficiary Organisation (930050338)</p>
+        </div>
+        <!-- class company for h3 heading and unordered list for anchor tags -->
+        <div class="company">
+          <h3>Company:</h3>
+          <ul>
+            <li><a href="#">About us</a></li>
+            <li><a href="#">Contact us</a></li>
+            <li><a href="#">Blog</a></li>
+            <li><a href="#">Testimonials</a></li>
+            <li><a href="#">Affiliate program</a></li>
+          </ul>
+        </div>
+        <!-- class help and support for h3 heading and unordered list for measures put in place -->
+        <div class="helpAndSupport">
+          <h3>Help & support</h3>
+          <ul>
+            <li>Help Centre</li>
+            <li>Free simple template</li>
+            <li>Refund policy</li>
+            <li>Report span</li>
+          </ul>
+        </div>
+        <!-- class contact for h3 heading and table for inline styling,images,paragraph tags  -->
+        <div class="contact">
+          <h3>Contact:</h3>
+          <table>
+            <tr>
+              <td style="border:1px solid black;"><img src="images/tel.png" alt="tel" width="30px" height="20px"></td>
+              <td><p>+(021) 685 0991</p></td>
+            </tr>
+            <tr>
+              <td style="border:1px solid #e38f84;"><img src="images/email.png" alt="email" width="30px" height="20px"></td>
+              <td><p>info@code4ct.com</p></td>
+            </tr>
+            <tr>
+              <td style="border:1px solid black;"><img src="images/address.png" alt="address" width="30px" height="20px"></td>
+              <td><p>Innovate South Africa, 403 Old Castle Brewery, 6 Beach Rd, Woodstock, Cape Town, 7915</p></td>
+            </tr>
+          </table>
+        </div>
+      </section>
+      <!-- div class signature bar for div id copyright,back to top,follow us,and contact icons -->
+      <div class="signatureBar">
+        <!-- div id for copyright with inline styling paragraph tags -->
+        <div id="copyright">
+          <p style="color:white;">copyright&copy;2017 PRIVACY POLICY</p>
+          <!-- anchor tag for back to top scroll with image to display anchor -->
+
+        </div>
+        <div class="backToTop">
+          <a href="#" id="backToTop"><img src = "images/scrollUp.png" alt="ScrollUp" width="20px" height= "40px"></a>
+        </div>
+
+      </div>
+    </footer>
+    <!-- link to external javascript homepage -->
+    <script src="javascript/homepage.js"></script>
+  </body>
+</html>

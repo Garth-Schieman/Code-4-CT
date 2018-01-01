@@ -1,0 +1,659 @@
+/* Media query for iphones */
+/* Portrait and Landscape */
+@media only screen
+  and (min-device-width: 320px)
+  and (max-device-width: 480px)
+  and (-webkit-min-device-pixel-ratio: 2) {
+    }/*this is homepage stylesheet*/
+    /*general styling*/
+    *{
+      box-sizing: border-box;
+    }
+    /*header for display,grid-template-columns,grid-template-rows,width,height,position,top,right,left,and background-colour*/
+    header{
+          display: grid;
+          grid-template-columns: repeat(1,1fr);
+          grid-template-rows: repeat(1,1fr);
+          width:100%;
+          height: auto;
+          position: fixed;
+          top: 0px;
+          right: 0px;
+          left: 0px;
+          background-color: white;
+          z-index: 1;
+    }
+    /*nav unordered list-style,list-style-type,float,and margin-top*/
+    nav ul{
+          list-style: none;
+          list-style-type: none;
+          float: left;
+          margin-top: 10mm;
+
+    }
+    /*nav image width,height,and float*/
+    nav img{
+              width: 240px;
+              height: 100px;
+              float: left;
+    }
+    /*nav list font-size,display,and padding*/
+    nav li{
+          font-size: 22px;
+          display: inline;
+    }
+    /*internal links for text-decoration,and colour*/
+    .internalLinks{
+                  text-decoration: none;
+                  color: black;
+    }
+    /*internal link hover colour*/
+    .internalLinks:hover{
+                        color: pink;
+    }
+    /*internal link active colour*/
+    .internalLinks:active{
+                        color: red;
+    }
+    /*search bar float*/
+    .searchBar{
+              float: right;
+    }
+    /*styling container width,height,padding-top,background-colour*/
+    #container{
+              display: grid;
+              grid-template-columns: repeat(1,1fr);
+              grid-template-rows: repeat(1,1fr);
+              width:100%;
+              height: 300px;
+              padding-top: 150px;
+              background-color: gray;
+              text-align: center;
+    }
+    /*styling class navigationTags anchor tag with an colour & text-decoration*/
+    .border a{
+            color: black;
+            text-decoration: none;
+    }
+
+    /*styling class navigationTags anchor tag with an active colour*/
+    .border a:active{
+                    color: red;
+    }
+    /*styling class navigationTags anchor tag with an hover colour*/
+    .border a:hover{
+                    color: #e38f84;
+    }
+    /*styling container1 width,height,margin-left*/
+    #container1{
+                display: grid;
+                grid-template-columns: repeat(2,1fr);
+                grid-template-rows: repeat(1,1fr);
+                width:100%;
+                height: auto;
+    }
+    /*contact form  width,height,padding,and float*/
+    #contactForm{
+                display: grid;
+                grid-template-columns: repeat(1,1fr);
+                grid-template-rows: repeat(1,1fr);
+                width:100%;
+                height: auto;
+                padding: 0px 4px;
+    }
+    /*contact form input type text width and height*/
+    #contactForm input[type=text]{
+                      width: 100%;
+                      height: 35px;
+                      margin-bottom: 8px;
+                      display: inline-grid;
+    }
+    /*valid email display,and colour*/
+    #valid{
+          display: none;
+          color: green;
+    }
+    /*invalid email display,and colour*/
+    #invalid{
+            display: none;
+            color: red;
+    }
+    /*valid phone number display,and colour*/
+    #validNumber{
+                display: none;
+                color: green;
+    }
+    /*invalid number display,and colour*/
+    #invalidNumber{
+                  display: none;
+                  color: red;
+    }
+    /*submit mail width,height,font-size,border,border-radius,colour,background-colour,and margin-left*/
+    #submitMail{
+                width: 200px;
+                height: 40px;
+                font-size: 16px;
+                border: none;
+                border-radius: 5%;
+                color: white;
+                background-color: #e38f84;
+                margin-left: 2mm;
+    }
+    /*contact info display,grid-template-area,grid-template-rows,width,height,and padding*/
+    #contactInfo{
+                display: grid;
+                grid-template-columns: repeat(1,1fr);
+                grid-template-rows: repeat(1,1fr);
+                width:100%;
+                height: 300px;
+                padding: 1px 80px;
+    }
+    /*map guide display,grid-template-area,grid-template-rows,width and height*/
+    #mapGuide{
+              display: grid;
+              grid-template-columns: repeat(1,1fr);
+              grid-template-rows: repeat(1,1fr);
+              width:100%;
+              height: 450px;
+    }
+
+    /*container2 display,grid-template-column,grid-template-rows,width,height and padding-left*/
+    #container2{
+                display: grid;
+                grid-template-columns: repeat(4,1fr);
+                grid-template-rows: repeat(1,1fr);
+                width: 100%;
+                height: 330px;
+                padding-left: 40px;
+    }
+
+    /*company unordered list-style*/
+    .company ul{
+                list-style: square;
+    }
+    /*company anchor tag text-decoration,and colour*/
+    .company a{
+              text-decoration: none;
+              color: black;
+    }
+    /*company anchor hover colour*/
+    .company a:hover{
+                    color: red;
+    }
+    /*company anchor active colour*/
+    .company a:active{
+                      color: red;
+    }
+
+    /*help and support unordered list-style*/
+    .helpAndSupport ul{
+                    list-style: square;
+    }
+
+    /*contact unordered list-style and list-style-type*/
+    .contact ul{
+                list-style: none;
+                list-style-type: none;
+    }
+    /*signature bar width,height,background-colour,padding,and clear*/
+    .signatureBar{
+                  display: grid;
+                  grid-template-columns: repeat(2,1fr);
+                  grid-template-rows: repeat(1,1fr);
+                  width: 100%;
+                  height: auto;
+                  background-color:#e38f84;
+    }
+    /*copyright width and height*/
+    #copyright{
+              width: 40%;
+              height: 40px;
+    }
+    /*back to top width,height,opacity,and float*/
+    #backToTop{
+              width: 5%;
+              height: 40px;
+              opacity: 0.5;
+              float: right;
+    }
+}
+/* Media query for ipads */
+/* Portrait and Landscape */
+@media only screen
+  and (min-device-width: 480px)
+  and (max-device-width:  768px)
+  and (-webkit-min-device-pixel-ratio: 1) {
+    }/*this is homepage stylesheet*/
+    /*general styling*/
+    *{
+      box-sizing: border-box;
+    }
+    /*header for display,grid-template-columns,grid-template-rows,width,height,position,top,right,left,and background-colour*/
+    header{
+          display: grid;
+          grid-template-columns: repeat(1,1fr);
+          grid-template-rows: repeat(1,1fr);
+          width:100%;
+          height: auto;
+          position: fixed;
+          top: 0px;
+          right: 0px;
+          left: 0px;
+          background-color: white;
+          z-index: 1;
+    }
+    /*nav unordered list-style,list-style-type,float,and margin-top*/
+    nav ul{
+          list-style: none;
+          list-style-type: none;
+          float: left;
+          margin-top: 10mm;
+
+    }
+    /*nav image width,height,and float*/
+    nav img{
+              width: 240px;
+              height: 100px;
+              float: left;
+    }
+    /*nav list font-size,display,and padding*/
+    nav li{
+          font-size: 22px;
+          display: inline;
+          padding: 5px;
+    }
+    /*internal links for text-decoration,and colour*/
+    .internalLinks{
+                  text-decoration: none;
+                  color: black;
+    }
+    /*internal link hover colour*/
+    .internalLinks:hover{
+                        color: pink;
+    }
+    /*internal link active colour*/
+    .internalLinks:active{
+                        color: red;
+    }
+    /*search bar float*/
+    .searchBar{
+              float: right;
+    }
+    /*styling container width,height,padding-top,background-colour*/
+    #container{
+              display: grid;
+              grid-template-columns: repeat(1,1fr);
+              grid-template-rows: repeat(1,1fr);
+              width:100%;
+              height: 300px;
+              padding-top: 150px;
+              background-color: gray;
+              text-align: center;
+    }
+    /*styling class navigationTags anchor tag with an colour & text-decoration*/
+    .border a{
+            color: black;
+            text-decoration: none;
+    }
+
+    /*styling class navigationTags anchor tag with an active colour*/
+    .border a:active{
+                    color: red;
+    }
+    /*styling class navigationTags anchor tag with an hover colour*/
+    .border a:hover{
+                    color: #e38f84;
+    }
+    /*styling container1 width,height,margin-left*/
+    #container1{
+                display: grid;
+                grid-template-columns: repeat(2,1fr);
+                grid-template-rows: repeat(1,1fr);
+                width:100%;
+                height: auto;
+    }
+    /*contact form  width,height,padding,and float*/
+    #contactForm{
+                display: grid;
+                grid-template-columns: repeat(1,1fr);
+                grid-template-rows: repeat(1,1fr);
+                width:100%;
+                height: auto;
+                padding: 0px 4px;
+    }
+    /*contact form input type text width and height*/
+    #contactForm input[type=text]{
+                      width: 100%;
+                      height: 35px;
+                      margin-bottom: 8px;
+                      display: inline-grid;
+    }
+    /*valid email display,and colour*/
+    #valid{
+          display: none;
+          color: green;
+    }
+    /*invalid email display,and colour*/
+    #invalid{
+            display: none;
+            color: red;
+    }
+    /*valid phone number display,and colour*/
+    #validNumber{
+                display: none;
+                color: green;
+    }
+    /*invalid number display,and colour*/
+    #invalidNumber{
+                  display: none;
+                  color: red;
+    }
+    /*submit mail width,height,font-size,border,border-radius,colour,background-colour,and margin-left*/
+    #submitMail{
+                width: 200px;
+                height: 40px;
+                font-size: 16px;
+                border: none;
+                border-radius: 5%;
+                color: white;
+                background-color: #e38f84;
+                margin-left: 2mm;
+    }
+    /*contact info display,grid-template-area,grid-template-rows,width,height,and padding*/
+    #contactInfo{
+                display: grid;
+                grid-template-columns: repeat(1,1fr);
+                grid-template-rows: repeat(1,1fr);
+                width:100%;
+                height: 300px;
+                padding: 1px 80px;
+    }
+    /*map guide display,grid-template-area,grid-template-rows,width and height*/
+    #mapGuide{
+              display: grid;
+              grid-template-columns: repeat(1,1fr);
+              grid-template-rows: repeat(1,1fr);
+              width:100%;
+              height: 450px;
+    }
+
+    /*container2 display,grid-template-column,grid-template-rows,width,height and padding-left*/
+    #container2{
+                display: grid;
+                grid-template-columns: repeat(4,1fr);
+                grid-template-rows: repeat(1,1fr);
+                width: 100%;
+                height: 330px;
+                padding-left: 40px;
+    }
+
+    /*company unordered list-style*/
+    .company ul{
+                list-style: square;
+    }
+    /*company anchor tag text-decoration,and colour*/
+    .company a{
+              text-decoration: none;
+              color: black;
+    }
+    /*company anchor hover colour*/
+    .company a:hover{
+                    color: red;
+    }
+    /*company anchor active colour*/
+    .company a:active{
+                      color: red;
+    }
+
+    /*help and support unordered list-style*/
+    .helpAndSupport ul{
+                    list-style: square;
+    }
+
+    /*contact unordered list-style and list-style-type*/
+    .contact ul{
+                list-style: none;
+                list-style-type: none;
+    }
+    /*signature bar width,height,background-colour,padding,and clear*/
+    .signatureBar{
+                  display: grid;
+                  grid-template-columns: repeat(2,1fr);
+                  grid-template-rows: repeat(1,1fr);
+                  width: 100%;
+                  height: auto;
+                  background-color:#e38f84;
+    }
+    /*copyright width and height*/
+    #copyright{
+              width: 40%;
+              height: 40px;
+    }
+    /*back to top width,height,opacity,and float*/
+    #backToTop{
+              width: 5%;
+              height: 40px;
+              opacity: 0.5;
+              float: right;
+    }
+}
+/* Media query for standard laptops */
+/* ----------- Non-Retina Screens ----------- */
+@media screen
+  and (min-device-width: 768px)
+  and (max-device-width: 1600px)
+  and (-webkit-min-device-pixel-ratio: 1) {
+    }/*this is homepage stylesheet*/
+    /*general styling*/
+    *{
+      box-sizing: border-box;
+    }
+    /*header for display,grid-template-columns,grid-template-rows,width,height,position,top,right,left,and background-colour*/
+    header{
+          display: grid;
+          grid-template-columns: repeat(1,1fr);
+          grid-template-rows: repeat(1,1fr);
+          width:100%;
+          height: auto;
+          position: fixed;
+          top: 0px;
+          right: 0px;
+          left: 0px;
+          background-color: white;
+          z-index: 1;
+    }
+    /*nav unordered list-style,list-style-type,float,and margin-top*/
+    nav ul{
+          list-style: none;
+          list-style-type: none;
+          float: left;
+          margin-top: 10mm;
+
+    }
+    /*nav image width,height,and float*/
+    nav img{
+              width: 240px;
+              height: 100px;
+              float: left;
+    }
+    /*nav list font-size,display,and padding*/
+    nav li{
+          font-size: 22px;
+          display: inline;
+          padding: 40px;
+    }
+    /*internal links for text-decoration,and colour*/
+    .internalLinks{
+                  text-decoration: none;
+                  color: black;
+    }
+    /*internal link hover colour*/
+    .internalLinks:hover{
+                        color: pink;
+    }
+    /*internal link active colour*/
+    .internalLinks:active{
+                        color: red;
+    }
+    /*search bar float*/
+    .searchBar{
+              float: right;
+    }
+    /*styling container width,height,padding-top,background-colour*/
+    #container{
+              display: grid;
+              grid-template-columns: repeat(1,1fr);
+              grid-template-rows: repeat(1,1fr);
+              width:100%;
+              height: 300px;
+              padding-top: 150px;
+              background-color: gray;
+              text-align: center;
+    }
+    /*styling class navigationTags anchor tag with an colour & text-decoration*/
+    .border a{
+            color: black;
+            text-decoration: none;
+    }
+
+    /*styling class navigationTags anchor tag with an active colour*/
+    .border a:active{
+                    color: red;
+    }
+    /*styling class navigationTags anchor tag with an hover colour*/
+    .border a:hover{
+                    color: #e38f84;
+    }
+    /*styling container1 width,height,margin-left*/
+    #container1{
+                display: grid;
+                grid-template-columns: repeat(2,1fr);
+                grid-template-rows: repeat(1,1fr);
+                width:100%;
+                height: auto;
+    }
+    /*contact form  width,height,padding,and float*/
+    #contactForm{
+                display: grid;
+                grid-template-columns: repeat(1,1fr);
+                grid-template-rows: repeat(1,1fr);
+                width:100%;
+                height: auto;
+                padding: 0px 4px;
+    }
+    /*contact form input type text width and height*/
+    #contactForm input[type=text]{
+                      width: 100%;
+                      height: 35px;
+                      margin-bottom: 8px;
+                      display: inline-grid;
+    }
+    /*valid email display,and colour*/
+    #valid{
+          display: none;
+          color: green;
+    }
+    /*invalid email display,and colour*/
+    #invalid{
+            display: none;
+            color: red;
+    }
+    /*valid phone number display,and colour*/
+    #validNumber{
+                display: none;
+                color: green;
+    }
+    /*invalid number display,and colour*/
+    #invalidNumber{
+                  display: none;
+                  color: red;
+    }
+    /*submit mail width,height,font-size,border,border-radius,colour,background-colour,and margin-left*/
+    #submitMail{
+                width: 200px;
+                height: 40px;
+                font-size: 16px;
+                border: none;
+                border-radius: 5%;
+                color: white;
+                background-color: #e38f84;
+                margin-left: 2mm;
+    }
+    /*contact info display,grid-template-area,grid-template-rows,width,height,and padding*/
+    #contactInfo{
+                display: grid;
+                grid-template-columns: repeat(1,1fr);
+                grid-template-rows: repeat(1,1fr);
+                width:100%;
+                height: 300px;
+                padding: 1px 80px;
+    }
+    /*map guide display,grid-template-area,grid-template-rows,width and height*/
+    #mapGuide{
+              display: grid;
+              grid-template-columns: repeat(1,1fr);
+              grid-template-rows: repeat(1,1fr);
+              width:100%;
+              height: 450px;
+    }
+
+    /*container2 display,grid-template-column,grid-template-rows,width,height and padding-left*/
+    #container2{
+                display: grid;
+                grid-template-columns: repeat(4,1fr);
+                grid-template-rows: repeat(1,1fr);
+                width: 100%;
+                height: 330px;
+                padding-left: 40px;
+    }
+
+    /*company unordered list-style*/
+    .company ul{
+                list-style: square;
+    }
+    /*company anchor tag text-decoration,and colour*/
+    .company a{
+              text-decoration: none;
+              color: black;
+    }
+    /*company anchor hover colour*/
+    .company a:hover{
+                    color: red;
+    }
+    /*company anchor active colour*/
+    .company a:active{
+                      color: red;
+    }
+
+    /*help and support unordered list-style*/
+    .helpAndSupport ul{
+                    list-style: square;
+    }
+
+    /*contact unordered list-style and list-style-type*/
+    .contact ul{
+                list-style: none;
+                list-style-type: none;
+    }
+    /*signature bar width,height,background-colour,padding,and clear*/
+    .signatureBar{
+                  display: grid;
+                  grid-template-columns: repeat(2,1fr);
+                  grid-template-rows: repeat(1,1fr);
+                  width: 100%;
+                  height: auto;
+                  background-color:#e38f84;
+    }
+    /*copyright width and height*/
+    #copyright{
+              width: 40%;
+              height: 40px;
+    }
+    /*back to top width,height,opacity,and float*/
+    #backToTop{
+              width: 5%;
+              height: 40px;
+              opacity: 0.5;
+              float: right;
+    }
+}

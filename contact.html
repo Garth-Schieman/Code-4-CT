@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Code4CT</title>
+    <!-- link to icon for title -->
+    <link rel="icon" type="image/PNG" href="images/logo.png">
+    <!-- reference to font awesome icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- this is link to my external stylesheet-->
+    <link rel="stylesheet" type="text/css" href="css_styling/contact.css">
+    <!-- reference to jquery link -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <!-- reference to font awesome -->
+    <!-- <script src="//cdnjs.cloudflare.com/ajax/libs/waypoints/2.0.3/waypoints.min.js"></script> -->
+  </head>
+
+  <body>
+
+    <!-- header for navigation bar with company logo,internal links,and form for input and search button  -->
+    <header>
+      <nav>
+        <img src="images/logo.png" alt="logo" width="100px" height="15%">
+        <ul>
+          <li><a class="internalLinks" href="homepage.html">Home</a></li>
+          <li><a class="internalLinks" href="course.html">Course</a></li>
+          <li><a class="internalLinks" href="about.html">About</a></li>
+          <li><a class="internalLinks" href="portfolio.html">Portfolio</a></li>
+          <li><a class="internalLinks" href="contact.html">Contact</a></li>
+          <li>
+            <form class="searchBar" action="index.html" method="post">
+              <input type="text" name="search" value="" placeholder="search...">
+              <button type="button" name="button"><i class="fa fa-search"></i></button>
+            </form>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <!-- section conatiner for breadcrum contact and homepage and current page links -->
+    <section id="container">
+      <div class="border">
+        <h1>CONTACT</h1>
+        <a href="homepage.html">HOME</a>
+        <img src="images/rightArrow.png" alt="rightArrow" width="40px" height="15px">
+        <a href="contact.html">CONTACT</a>
+      </div>
+    </section>
+    <!-- section id container for div class bio with h1 heading,paragraph tag ,and button. div class bio_images for with table rows and table data with images.  -->
+    <section id="container1">
+
+      <form id="contactForm">
+
+          <h2 style="border-bottom:1px solid gray;"><span style="border-bottom:2px solid #e38f84;">Send</span> a message:</h2>
+          <input type="text" name="" value="" placeholder="your name...">
+          <input type="text" name="" value="" id="email" placeholder="email here...">
+          <p id="valid">Well done!!! valid email</p>
+          <p id="invalid">Invalid email, Please try again!</p>
+          <input type="text" name="" value="" id="number"placeholder="phone number...">
+          <p id="validNumber">Well done!!! valid phone number</p>
+          <p id="invalidNumber">Invalid phone number, Please try again!</p>
+          <p><textarea name="name" rows="8" cols="100" placeholder="type message here..."></textarea></p>
+
+          <p><button type="button" name="button" id="submitMail">Send Email</button></p>
+
+      </form>
+      <!-- aside for id contact info for h2 and table with inline styling   -->
+      <aside id="contactInfo">
+        <h2 style="border-bottom:1px solid gray;"><span style="border-bottom:2px solid #e38f84;">Con</span>tact Info:</h2>
+        <table>
+          <tr>
+            <td style="border:1px solid black;"><img src="images/email (2).png" alt="email" width="30px" height="20px"></td>
+            <td><p>info@code4ct.com</p></td>
+          </tr>
+          <tr>
+            <td style="border:1px solid black;"><img src="images/tel (1).png" alt="tel" width="30px" height="20px"></td>
+            <td><p> 021 685 0991</p></td>
+          </tr>
+          <tr>
+            <td style="border:1px solid black;"><img src="images/clock.png" alt="clock" width="30px" height="20px"></td>
+            <td><p>Mon-Fri 09:00-12:00</p></td>
+          </tr>
+          <tr>
+            <td style="border:1px solid black;"><img src="images/address (2).png" alt="address" width="30px" height="20px"></td>
+            <td>
+              <p>Innovate South Africa,403 Old Castle Brewery, 6 Beach Rd,Woodstock, Cape Town,7915</p>
+            </td>
+          </tr>
+        </table>
+      </aside>
+    </section>
+    <!-- section iframe for map guide of the location for the organisation -->
+    <section id="mapGuide">
+      <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d6621.276100068998!2d18.448715!3d-33.924714!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x6a0ebf49da5aabab!2sCodeSpace!5e0!3m2!1sen!2sza!4v1510843902009" width="100%" height="400px" frameborder="0" style="border:0" allowfullscreen></iframe>
+    </section>
+    <!-- footer for id container5  with section tag for div class legal,company,help and support,and contact -->
+    <footer>
+      <section id="container2">
+        <!-- class legal with h3 heading and paragraph tags for text -->
+        <div class="legal">
+          <h3>Legal:</h3>
+          <p>Code for Cape Town is a project of Innovate South Africa, which is a registered non-profit (137806NPO) and a Public Beneficiary Organisation (930050338)</p>
+        </div>
+        <!-- class company for h3 heading and unordered list for anchor tags -->
+        <div class="company">
+          <h3>Company:</h3>
+          <ul>
+            <li><a href="#">About us</a></li>
+            <li><a href="#">Contact us</a></li>
+            <li><a href="#">Blog</a></li>
+            <li><a href="#">Testimonials</a></li>
+            <li><a href="#">Affiliate program</a></li>
+          </ul>
+        </div>
+        <!-- class help and support for h3 heading and unordered list for measures put in place -->
+        <div class="helpAndSupport">
+          <h3>Help & support</h3>
+          <ul>
+            <li>Help Centre</li>
+            <li>Free simple template</li>
+            <li>Refund policy</li>
+            <li>Report span</li>
+          </ul>
+        </div>
+        <!-- class contact for h3 heading and table for inline styling,images,paragraph tags  -->
+        <div class="contact">
+          <h3>Contact:</h3>
+          <table>
+            <tr>
+              <td style="border:1px solid black;"><img src="images/tel.png" alt="tel" width="30px" height="20px"></td>
+              <td><p>+(021) 685 0991</p></td>
+            </tr>
+            <tr>
+              <td style="border:1px solid #e38f84;"><img src="images/email.png" alt="email" width="30px" height="20px"></td>
+              <td><p>info@code4ct.com</p></td>
+            </tr>
+            <tr>
+              <td style="border:1px solid black;"><img src="images/address.png" alt="address" width="30px" height="20px"></td>
+              <td><p>Innovate South Africa, 403 Old Castle Brewery, 6 Beach Rd, Woodstock, Cape Town, 7915</p></td>
+            </tr>
+          </table>
+        </div>
+      </section>
+      <!-- div class signature bar for div id copyright,back to top,follow us,and contact icons -->
+      <div class="signatureBar">
+        <!-- div id for copyright with inline styling paragraph tags -->
+        <div id="copyright">
+          <p style="color:white;">copyright&copy;2017 PRIVACY POLICY</p>
+          <!-- anchor tag for back to top scroll with image to display anchor -->
+
+        </div>
+        <div class="backToTop">
+          <a href="#" id="backToTop"><img src = "images/scrollUp.png" alt="ScrollUp" width="20px" height= "40px"></a>
+        </div>
+
+      </div>
+    </footer>
+    <!-- link to external javascript homepage -->
+    <script src="javascript/contact.js"></script>
+  </body>
+</html>
