@@ -673,7 +673,7 @@
 /* Media query for standard laptops */
 /* ----------- Non-Retina Screens ----------- */
 @media screen
-  and (min-device-width: 768px)
+  and (min-device-width: 1024px)
   and (max-device-width: 1600px)
   and (-webkit-min-device-pixel-ratio: 1) {
     /*this is homepage stylesheet*/
@@ -713,7 +713,7 @@
     nav li{
           font-size: 22px;
           display: inline;
-          padding: 40px;
+          padding: 15px;
     }
     /*internal links for text-decoration,and colour*/
     .internalLinks{
@@ -789,12 +789,12 @@
               grid-template-columns: repeat(2,1fr);
               grid-template-rows: repeat(1,1fr);
               width: 100%;
-              height: 560px;
+              height: auto;
     }
     /*who are we width,height,and float*/
     .whoAreWe{
               padding-right: 14px;
-              padding-left: 30px;
+              padding-left: 10px;
     }
 
     /*styling id container2 width,height,padding,and clear*/
@@ -900,50 +900,52 @@
             box-shadow: none;
             padding-top: 2mm;
     }
-    /*carousel display,grid-template-columns,grid-template-rows,width,height,background-colour and overflow*/
-    #carousel{
-              display: grid;
-              grid-template-columns: repeat(1,1fr);
-              grid-template-rows: repeat(1,1fr);
-              width: 100%;
-              height: auto;
-              background-color: black;
-              overflow: hidden;
-    }
-    /*carousel inner width,height,float,and overflow*/
-    #carousel_inner {
-                    width:100%;
-                    height: 160px;
-    }
-    /*carousel unordered list and images width,and height*/
-    #carousel_ul li img {
-                        width: 100%;
-                        height: 150px;
+   /*carousel display,grid-template-columns,grid-template-rows,width,height,background-colour and overflow*/
+      #carousel{
+      display: grid;
+      grid-template-columns: repeat(1,1fr);
+      grid-template-rows: repeat(1,1fr);
+      width: 100%;
+      height: 150px;
+      background-color: black;
+      overflow: hidden;
+      }
+      /*carousel inner width,height,float,and overflow*/
+      #carousel_inner {
+                  width:100%;
+                  height: 90px;
+                  margin-bottom: 10px;
+      }
+      /*carousel unordered list and images width,and height*/
+      #carousel_ul li img {
+                  width: 100%;
+                  height:125px;
 
-    }
-    /*carousel unordered list position,left,list-style-type,margin,padding,top,width,and padding-bottom*/
-    #carousel_ul {
-                  position: relative;
-                  list-style-type: none;
-                  margin: 0px;
+      }
+      /*carousel unordered list position,left,list-style-type,margin,padding,top,width,and padding-bottom*/
+      #carousel_ul {
+            position: relative;
+            list-style-type: none;
+            margin: 0px;
+            padding: 0px;
+            top: 25px;
+            width:112%;
+      }
+      /*carousel unordered list width,height,padding,margin,and float*/
+      #carousel_ul li {
+                  width: 200px;
+                  height: 90px;
                   padding: 0px;
-                  top: 30px;
-                  width:112%;
-    }
-    /*carousel unordered list width,height,padding,margin,and float*/
-    #carousel_ul li {
-                    width: 200px;
-                    height: 110px;
-                    padding: 0px;
-                    margin-right: 10px;
-                    float: left;
-    }
-    /*carousel unordered list images margin-bottom,cursor,cursor,and border*/
-    #carousel_ul li img {
-                        cursor: pointer;
-                        cursor: hand;
-                        border: 0px;
-    }
+                  margin-right: 10px;
+                  float: left;
+                  margin-bottom: 50px;
+      }
+      /*carousel unordered list images margin-bottom,cursor,cursor,and border*/
+      #carousel_ul li img {
+                  cursor: pointer;
+                  cursor: hand;
+                  border: 0px;
+      }
 
     /*container5 display,grid-template-column,grid-template-rows,width,height and padding-left*/
     #container6{
@@ -994,7 +996,7 @@
     }
     /*copyright width and height*/
     #copyright{
-              width: 40%;
+              width: 60%;
               height: 40px;
     }
     /*back to top width,height,opacity,and float*/
