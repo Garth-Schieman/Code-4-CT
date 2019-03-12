@@ -757,7 +757,7 @@
 /* Media query for standard laptops */
 /* ----------- Non-Retina Screens ----------- */
 @media screen
-  and (min-device-width: 768px)
+  and (min-device-width: 1024px)
   and (max-device-width: 1600px)
   and (-webkit-min-device-pixel-ratio: 1) {
     /*this is homepage stylesheet*/
@@ -797,7 +797,7 @@
         nav li{
               font-size: 22px;
               display: inline;
-              padding: 40px;
+              padding: 15px;
         }
         /*internal links for text-decoration,and colour*/
         .internalLinks{
@@ -936,12 +936,12 @@
                   grid-template-rows: repeat(1,1fr);
                   width: 100%;
                   height: auto;
-                  padding: 2mm 30mm 6mm 35mm;
+                  padding: 2mm 5mm 6mm 5mm;
         }
         /*portfolio images display,grid-template-columns,grid-template-rows,width,and height*/
         .portfolio_images{
                   display: grid;
-                  grid-template-columns: repeat(4,1fr);
+                  grid-template-columns: repeat(2,1fr);
                   grid-template-rows: repeat(1,1fr);
                   width: 100%;
                   height: auto;
@@ -953,7 +953,7 @@
                     grid-template-rows: repeat(1,1fr);
                     width: 100%;
                     height: auto;
-                    padding: 2mm 35mm 6mm 35mm;
+                    padding: 2mm 5mm 6mm 5mm;
         }
         /*meet team display,grid-template-columns,grid-template-rows,width and height*/
         #meet_team{
@@ -1032,19 +1032,20 @@
                   grid-template-columns: repeat(1,1fr);
                   grid-template-rows: repeat(1,1fr);
                   width: 100%;
-                  height: auto;
+                  height: 150px;
                   background-color: black;
                   overflow: hidden;
         }
         /*carousel inner width,height,float,and overflow*/
         #carousel_inner {
                         width:100%;
-                        height: 160px;
+                        height: 90px;
+                        margin-bottom: 10px;
         }
         /*carousel unordered list and images width,and height*/
         #carousel_ul li img {
                             width: 100%;
-                            height: 150px;
+                            height:125px;
 
         }
         /*carousel unordered list position,left,list-style-type,margin,padding,top,width,and padding-bottom*/
@@ -1053,16 +1054,17 @@
                       list-style-type: none;
                       margin: 0px;
                       padding: 0px;
-                      top: 30px;
+                      top: 25px;
                       width:112%;
         }
         /*carousel unordered list width,height,padding,margin,and float*/
         #carousel_ul li {
                         width: 200px;
-                        height: 110px;
+                        height: 90px;
                         padding: 0px;
                         margin-right: 10px;
                         float: left;
+                        margin-bottom: 50px;
         }
         /*carousel unordered list images margin-bottom,cursor,cursor,and border*/
         #carousel_ul li img {
@@ -1120,7 +1122,7 @@
         }
         /*copyright width and height*/
         #copyright{
-                  width: 40%;
+                  width: 60%;
                   height: 40px;
         }
         /*back to top width,height,opacity,and float*/
