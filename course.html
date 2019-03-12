@@ -367,7 +367,7 @@
         nav li{
               font-size: 22px;
               display: inline;
-              padding: 40px;
+              padding: 15px;
         }
         /*internal links for text-decoration,and colour*/
         .internalLinks{
@@ -386,27 +386,28 @@
         .searchBar{
                   float: right;
         }
-        /*conatainer display,grid-template-columns,grid-template-rows,width,height,text-align,margin-left,margin-top,and background-colour*/
-        .container{
-                  display: grid;
-                  grid-template-columns: repeat(2,1fr);
-                  grid-template-rows: repeat(1,1fr);
-                  width: 80%;
-                  height: auto;
-                  text-align: center;
-                  margin-left:130px;
-                  margin-top: 100px;
-                  background-color:#e38f84;
-        }
         /*main container for display,grid-template-columns,grid-template-rows,width,height,text-align,margin-left,float-left,and background-colour*/
         #containerMain{
                       display: grid;
                       grid-template-columns: repeat(2,1fr);
                       grid-template-rows: repeat(1,1fr);
-                      width: 140%;
+                      grid-column-gap:5px;
+                      width: 100%;
                       height: auto;
-                      text-align: center;
+                      
+                  margin-left: 150px;
         }
+        /*conatainer display,grid-template-columns,grid-template-rows,width,height,text-align,margin-left,margin-top,and background-colour*/
+        .container{
+                  display: grid;
+                  grid-template-columns: repeat(2,1fr);
+                  grid-template-rows: repeat(1,1fr);
+                  width: 100%;
+                  height: auto;
+                  margin-top: 100px;
+                  background-color:#e38f84;
+        }
+        
         /*class cost basket display,grid-template-columns,grid-template-rows,width,height,margin-right,text-align,float,background-colour,and position*/
         .costBasket{
                     display: grid;
@@ -414,7 +415,7 @@
                     grid-template-rows: repeat(1,1fr);
                     width: 45%;
                     height: auto;
-                    margin-left: 300px;
+                    margin-left: 250px;
                     text-align: center;
                     background-color: gray;
                     position: static;
@@ -428,7 +429,6 @@
                     width: 100%;
                     height: 330px;
                     margin-top: 10px;
-                    /*padding-left: 40px;*/
         }
 
         /*company unordered list-style*/
@@ -470,7 +470,7 @@
         }
         /*copyright width and height*/
         #copyright{
-                  width: 40%;
+                  width: 60%;
                   height: 40px;
         }
         /*back to top width,height,opacity,and float*/
@@ -635,7 +635,7 @@
       <div class="signatureBar">
         <!-- div id for copyright with inline styling paragraph tags -->
         <div id="copyright">
-          <p style="color:white;">copyright&copy;2017 PRIVACY POLICY</p>
+          <p style="color:white;">COPYRIGHT&copy;2017 PRIVACY POLICY</p>
           <!-- anchor tag for back to top scroll with image to display anchor -->
 
         </div>

@@ -480,7 +480,7 @@
     nav li{
           font-size: 22px;
           display: inline;
-          padding: 40px;
+          padding: 15px;
     }
     /*internal links for text-decoration,and colour*/
     .internalLinks{
@@ -646,7 +646,7 @@
     }
     /*copyright width and height*/
     #copyright{
-              width: 40%;
+              width: 50%;
               height: 40px;
     }
     /*back to top width,height,opacity,and float*/
