@@ -11,8 +11,10 @@
     <link rel="stylesheet" type="text/css" href="css_styling/portfolio.css">
     <!-- reference to jquery link -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-    <!-- <script src="jquery-3.2.1.min.js"></script> -->
-    <!-- <script src="//cdnjs.cloudflare.com/ajax/libs/waypoints/2.0.3/waypoints.min.js"></script> -->
+   <!-- link to pretty photo -->
+   <script src="js/jquery.js" type="text/javascript" charset="utf-8"></script>
+    <link rel="stylesheet" href="css/prettyPhoto.css" type="text/css" media="screen" charset="utf-8" />
+    <script src="js/jquery.prettyPhoto.js" type="text/javascript" charset="utf-8"></script>
   </head>
 
   <body>
@@ -55,46 +57,53 @@
     <section id="container2">
       <!-- <div class="rows"> -->
         <div class="portfolioImages">
-          <img src="images/portfolioImage1.JPG" alt="" class="zoom" width="250px" height="250px">
+          <a href="images/portfolioImage1.JPG" rel="prettyPhoto"><img src="images/portfolioImage1.JPG" alt="" class="zoom" width="250px" height="250px"></a>  
         </div>
         <div class="portfolioImages">
-          <img src="images/portfolioImage2.JPG" alt="" class="zoom" width="250px" height="250px">
+          <a href="images/portfolioImage2.JPG" rel="prettyPhoto"><img src="images/portfolioImage2.JPG" alt="" class="zoom" width="250px" height="250px"></a>
         </div>
         <div class="portfolioCollage">
-          <img src="images/portfolioImage3.JPG" alt="" class="zoom" width="250px" height="250px">
+          <a href="images/portfolioImage3.JPG" rel="prettyPhoto"><img src="images/portfolioImage3.JPG" alt="" class="zoom" width="250px" height="250px"></a>
         </div>
         <div class="portfolioImages">
-          <img src="images/portfolio1.JPG" alt="" class="zoom"  width="250px" height="250px">
+          <a href="images/portfolio1.JPG" rel="prettyPhoto"><img src="images/portfolio1.JPG" alt="" class="zoom"  width="250px" height="250px"></a>
         </div>
-      <!-- </div> -->
         <div class="portfolioImages">
-          <img src="images/portfolio2.JPG" alt="" class="zoom" width="250px" height="250px">
+          <a href="images/portfolio2.JPG" rel="prettyPhoto">
+            <img src="images/portfolio2.JPG" alt="" class="zoom" width="250px" height="250px"></a>
         </div>
         <div class="portfolioCollage">
-          <img src="images/portfolio3.JPG" alt="" class="zoom" width="250px" height="250px">
+          <a href="images/portfolio3.JPG" rel="prettyPhoto">
+            <img src="images/portfolio3.JPG" alt="" class="zoom" width="250px" height="250px"></a>
         </div>
         <div class="portfolioImages">
-          <img src="images/portfolio4.JPG" alt="" class="zoom" width="250px" height="250px">
+          <a href="images/portfolio4.JPG" rel="prettyPhoto">
+            <img src="images/portfolio4.JPG" alt="" class="zoom" width="250px" height="250px"></a>
         </div>
         <div class="portfolioImages">
-          <img src="images/portfolio5.JPG" alt="" class="zoom" width="250px" height="250px">
+          <a href="images/portfolio5.JPG" rel="prettyPhoto">
+            <img src="images/portfolio5.JPG" alt="" class="zoom" width="250px" height="250px"></a>
         </div>
       </div>
 <!--
       <div class="rows"> -->
         <div class="portfolioImages">
-          <img src="images/portfolio6.JPG" alt="" class="zoom" width="250px" height="250px">
+          <a href="images/portfolio6.JPG" rel="prettyPhoto">
+            <img src="images/portfolio6.JPG" alt="" class="zoom" width="250px" height="250px"></a>
         </div>
         <div class="portfolioImages">
-          <img src="images/slide1.jpg" alt="" class="zoom" width="250px" height="250px">
+          <a href="images/slide1.jpg" rel="prettyPhoto">
+            <img src="images/slide1.jpg" alt="" class="zoom" width="250px" height="250px">
+          </a>
         </div>
         <div class="portfolioCollage">
-          <img src="images/portfolioImage4.JPG" alt="" class="zoom" width="250px" height="250px">
+          <a href="images/portfolioImage4.JPG" rel="prettyPhoto">
+            <img src="images/portfolioImage4.JPG" alt="" class="zoom" width="250px" height="250px"></a>
         </div>
         <div class="portfolioImages">
-          <img src="images/portfolioImage5.jpg" alt="" class="zoom" width="250px" height="250px">
+          <a href="images/portfolioImage5.jpg" rel="prettyPhoto">
+            <img src="images/portfolioImage5.jpg" alt="" class="zoom" width="250px" height="250px"></a>
         </div>
-      <!-- </div> -->
     </section>
 
     <!-- section id for carousel,div id carousel-container,wuth div id carousel inner with unordered list with anchor tags consisting for partners logo   -->
@@ -206,6 +215,12 @@
     </footer>
     <!-- link to external javascript homepage -->
     <script src="javascript/portfolio.js"></script>
+    <!-- intialize pretty phot -->
+    <script type="text/javascript">
+      $(document).ready(function(){
+        $("a[rel^='prettyPhoto']").prettyPhoto();
+      });
+    </script>
 
   </body>
 </html>
