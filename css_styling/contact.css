@@ -33,7 +33,7 @@
     }
     /*nav image width,height,and float*/
     nav img{
-              width: 240px;
+              width: 150px;
               height: 100px;
               float: left;
     }
@@ -440,7 +440,7 @@
 /* Media query for standard laptops */
 /* ----------- Non-Retina Screens ----------- */
 @media screen
-  and (min-device-width: 768px)
+  and (min-device-width: 1024px)
   and (max-device-width: 1600px)
   and (-webkit-min-device-pixel-ratio: 1) {
     }/*this is homepage stylesheet*/
@@ -462,17 +462,17 @@
           background-color: white;
           z-index: 1;
     }
+    
     /*nav unordered list-style,list-style-type,float,and margin-top*/
     nav ul{
           list-style: none;
           list-style-type: none;
-          float: left;
           margin-top: 10mm;
 
     }
     /*nav image width,height,and float*/
     nav img{
-              width: 240px;
+              width: 150px;
               height: 100px;
               float: left;
     }
@@ -577,7 +577,7 @@
                 border-radius: 5%;
                 color: white;
                 background-color: #e38f84;
-                margin-left: 2mm;
+                /* margin-left: 2mm; */
     }
     /*contact info display,grid-template-area,grid-template-rows,width,height,and padding*/
     #contactInfo{
@@ -586,7 +586,7 @@
                 grid-template-rows: repeat(1,1fr);
                 width:100%;
                 height: 300px;
-                padding: 1px 80px;
+                /* padding: 1px 80px; */
     }
     /*map guide display,grid-template-area,grid-template-rows,width and height*/
     #mapGuide{
@@ -646,7 +646,7 @@
     }
     /*copyright width and height*/
     #copyright{
-              width: 50%;
+              width: 60%;
               height: 40px;
     }
     /*back to top width,height,opacity,and float*/
